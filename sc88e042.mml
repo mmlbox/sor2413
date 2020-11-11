@@ -1,0 +1,154 @@
+;[gain=1.0;name=sc88e042]
+#opll_mode 0
+#lfo_mode 0
+#tempo 119
+#title { "Lyre (Gods in the Heaven) / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation" }
+
+@v15 = { ; 0
+;       TL FB
+        29, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 3, 1, 3, 0, 2, 0, 0, 0, 0, 0,
+  15, 6, 1, 3, 0, 1, 0, 0, 0, 1, 0 }
+
+@v16 = { ; 1 strings harmonics
+;       TL FB
+        18, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  12, 5, 2, 1, 0, 5, 0, 0, 0, 0, 1,
+   7, 5, 2, 2, 0, 1, 0, 0, 0, 0, 0 }
+   
+@e10={0,0,acfec=128}
+
+;BCDE123 !
+
+9A l8 q8 ; t119 @t215 
+9 @15 v12  
+A @15 v6 \1
+9A o4 b32>c32e32g32b32>e32g32b32g32e32<b32g32
+9A e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32e32<b32
+9A g32e32<b32 >> b32g32e32<b32g32e32 
+9A t116 ; @t214 
+9A >g32e32<b32g32e32<b32 
+9A t104 ; @t209 
+9A >>e32<b32g32 
+9A t96 ; @t205 
+9A e32<b32g32 
+9A t86 ; @t199 
+9A >b32g32e32 
+9A t78 ; @t193 
+9A <b32g32e32
+9A [;L 
+9A @15 ;@t193
+9 v12
+A v5
+9A o4 [e16g16b16>e16g16b16>e16<b16g16e16<b16g16]2 
+9A e16g16b16g16b16>e16g16e16g16b16>e16g16b16g16e16g16
+9A e16<b16>e16<b16f+16b16f+16<b16 
+9A [e16g16b16>e16g16b16>e16<b16g16e16<b16g16]2 
+9A e16g16b16g16b16>e16g16e16g16b16
+9A >e16g16b16g16d16g16<b16>d16<f+16a16d16f+16<a16>d16 
+9 @16v11o5\1
+A @6 v11o5\0
+9A h26,4,0,3
+9A g4&ggf+de2&e4a4&aabag4af+ga [g4&ggab]2 e4&eef+gb4 
+9A ; t75 ;@t191 
+9A >c 
+9A ; t66 ;@t182
+9A <a2&a4&a&ar
+9A t78
+9A hf 
+9A ]0
+
+BC l8 q8 
+B @15 v9 
+C @15 v3\1
+BC r32
+BC o4 b32>c32e32g32b32>e32g32b32g32e32<b32g32
+BC e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32e32<b32
+BC g32e32<b32 >> b32g32e32<b32g32e32>g32e32<b32g32e32<b32 >> e32
+BC <b32g32e32<b32g32>b32g32e32<b32g32e32r32 
+BC [ ; L
+B @15 v9 
+C @15 v3\1
+BC o4 [e16g16b16>e16g16b16>e16<b16g16e16<b16g16]2 
+BC e16g16b16g16b16>e16g16e16g16b16>e16g16b16g16e16g16
+BC e16<b16>e16<b16f+16b16f+16<b16 
+BC [e16g16b16>e16g16b16>e16<b16g16e16<b16g16]2 
+BC e16g16b16g16b16>e16g16e16g16b16>e16g16b16g16d16
+BC g16<b16>d16<f+16a16d16f+16<a16>d16 
+B @16 v7 o5 \1
+C @6  v7 o5 \0 
+BC h26,4,0,3
+BC g4&ggf+de2&e4a4&aabag4af+g
+BC a [g4&ggab]2 e4&eef+gb4
+BC >c<a2&a4&ar4
+BC hf
+BC ]0
+
+DE l8 q8
+D @15 v8 \1 
+E @15 v2 \2 
+DE r16 o4 b32>c32e32g32b32>e32g32b32g32e32<b32
+DE g32e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32e32
+DE <b32g32e32<b32 >> b32g32e32<b32g32e32<g32e32<b32g32e32<b32
+DE >> e32<b32g32e32<b32g32>b32g32e32<b32 
+DE [ ; L 
+D @5 v13 o3 \1
+E @6 v12 o3
+DE e2&e4
+DE d2&d4c+2&c+4c4&cd4&de2&e4d2&
+DE d4c+2&c+4d2&d4<g2&g4>c2&c4<a2&a4
+DE >d4&dd+4<b>e2&e4d2&d4c+2&c+4d1&d2
+DE ]0
+
+@e0={0,0,eb}
+@e1={0,0,fc}
+
+1 l8 q8 @0 v9 r12r96 o3 
+1 b32>c32e32g32b32>e32g32b32g32e32<b32
+1 g32e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32e32
+1 <b32g32e32<b32 >> b32g32e32<b32g32e32<g32e32<b32g32e32<b32
+1 >> e32<b32g32e32<b32g32>b32g32e32 
+1 [ 
+1 @1 v11 o5 
+1 e2&ef+16g16<b4&be4&e>b2ef+g4af+32g32f+4&f+16
+1 e2&ef+16g16<b4&be4f+g2&g4g4&gf+4&f+
+1 (@0 b16>d16g16d16g16b16>d16<b16g16b16
+1 g16d16c16e16g16e16g16>c16e16c16<g16>c16<g16e16<a16>c+16
+1 e16c+16e16a16>c+16<a16e16a16e16c+16<a16>d16f+16a16f+16d16
+1 <a16>d+16f+16d+16<a16>f+16 [<b16>e16g16e16g16e16]6 g&ga
+1 [f+&]8f+
+1 ]0
+
+2 l8 q8 @0 v7 r o3 
+2 b32>c32e32g32b32>e32g32b32g32e32<b32g32
+2 e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32e32<b32
+2 g32e32<b32 >> b32g32e32<b32g32e32<g32e32<b32g32e32<b32 >> e32
+2 <b32g32e32<b32g32>b32g32 
+2 [ 
+2 @1 v11 o4 
+2 b2&bbe4&e<b4&b >> c+2&c+4e4f+d32e32d4&d16<b2&b
+2 be4&e<b4&b>e2&e4d4&dd4&d
+2 (@0 r16b16>d16g16d16g16b16>d16<b16g16b16g16d16
+2 c16e16g16e16g16>c16e16c16<g16>c16<g16e16<a16>c+16e16c+16
+2 e16a16>c+16<a16e16a16e16c+16<a16>d16f+16a16f+16d16<a16>d+16
+2 f+16d+16<a16 [g16b16>e16<b16>e16<b16]6 >d&dd[d&]8d
+2 ]0
+
+3 l8 q8 @0 v5 \1 rr32 o3 
+3 b32>c32e32g32b32>e32g32b32g32e32
+3 <b32g32e32>a+32g32e32<a+32g32e32>a32e32<b32g32e32<b32 >> a+32
+3 e32<b32g32e32<b32 >> b32g32e32<b32g32e32<g32e32<b32g32e32
+3 <b32 >> e32<b32g32e32<b32g32>b32 
+3 [ 
+3 @1 v11 o5
+3 e2&ef+16g16<b4&be4&e>b2ef+g4af+32g32f+4&f+16
+3 e2&ef+16g16<b4&be4f+g2&g4g4&g
+3 f+4&f+
+3 (@0 b16>d16g16d16g16b16>d16<b16g16b16g16
+3 d16c16e16g16e16g16>c16e16c16<g16>c16<g16e16<a16>c+16e16
+3 c+16e16a16>c+16<a16e16a16e16c+16<a16>d16f+16a16f+16d16<a16
+3 >d+16f+16d+16<a16>f+16 [<b16>e16g16e16g16e16]6 g&ga
+3 [f+&]8f+
+3 ]0

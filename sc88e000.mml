@@ -1,0 +1,116 @@
+;[gain=1.0;name=sc88e000]
+#opll_mode 0
+#tempo 102 ;@t208 
+#title { "Opening / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation"}
+
+@v16 = {
+;       TL FB
+        21, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+  15, 7, 3, 3, 0, 2, 0, 0, 0, 0, 0 }
+  
+@v17 = {
+;       TL FB
+        21, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+  15, 7, 3, 3, 0, 2, 0, 0, 0, 0, 0 }
+
+@e10={0,0,y2,22.9y2,23f}
+
+9A l8 q8
+9 @16@e10 v12 \2 o4
+A @17     v12 \3 o4
+9A rdga
+9A b2&bgab
+9A >c<bab4&b>f+4 e4&e<b4&b>f+4 
+9A e4&e<b4babg2
+9A e6&e48 f+6&f+48 g ; r64 
+9A g2f+2 
+9 t94
+9A g2 
+9 t58
+9A a2
+9 t102 
+9A r2a64b12&b%5ag4>c4<ba4g4
+9A b2&ba64b12&b%5ag4a4gg4d+4d32d+32d2&
+9A d16r64>d12&d%5eeff4<b>e4d4e2&e<a 
+9A b>cdd4f+a4c4<b2&bb2b2beg+b
+9A b4&ba4&ae4baga4b>c4<b4&b
+9A a2&abaga4b>cd1d2&d
+9 t96
+9A gf+ef+g1r32g1
+
+BC l8 q8 
+B @16@e10 v12 o2 \1
+C @17     v12 o2 \2
+BC r2
+BC g>da2&a4<b>eba2&
+BC a>b4&be4&eb4b4&bg4gf+ge2
+BC <b6&b48b6&b48b ; r64
+BC >e2d2
+BC e2
+BC f+2
+BC r2>d2d+1r2
+BC d2d+4&d+f4c4<b2&bb2b4&bb2>c2 ;
+BC o3b2&br4ro5 f+4<a4g2&ga2a2g+2
+BC [e4&ee2&e]2 g4&gf2&fg4&gf2a1
+BC a2&ar2>d1r64d1
+
+DE l8 q8 
+D @16 @e10 v12 \1
+E @17      v12 \2 
+DE r2
+DE o2 rg>db2&b
+DE >e4&ed+2&d+ <<eb
+DE >f+g2&g<db>
+DE f+g2&g<c+b>
+DE c+e2&e<
+DE d2d2
+DE d2
+DE d2 ; &d64
+DE g>dab2&b<g>d+g>c2&c o2 g>dab2&b<g>d+
+DE g>c2&c o2 g>dab2&beb>eg+2&g+
+DE o2a>ea2&a4<da>d f+2&f+<g>dgb<f
+DE >cfa<eb>df+g+2 [<a>ega2&a]2 
+DE [<f>cfa2&a]2 <da>cd4a>cd1&d
+DE o2 t90 g>cdg t87 a>c t84 d t76 e t66 g1
+
+@r0={0,0,255,255,255,180,1,1}
+@r1={0,0,255,255,255,192,0,0}
+@r2={0,0,255,255,8,212,1,1}
+
+1 l8 q8 @0 v9 @\8 
+1 r2 
+1 o4 g2&ggdga4&ab4&b
+1 a4g4&gg4&gef+g4&gg4&gf+g>
+1 b12g12e12g12e12c+12 
+1 o3 g6&g48g6&g48g
+1 a2a2t94a2t58a2t102 ; &a64 
+1 @1 g1>c4&cd+4f4g1&g
+1 >c4&cd+4<g4 
+1 @2 g1&gg+4&g+g+2b1&ba4&aa4
+1 )f+4d2&dc2e1(
+1 [c4&cc2&c]3 c4&cc2g1f+2&f+r2>
+1 t90c2&t87c4&t84c&t76c<t66b1
+
+2 l8 q8 @0 v9 
+2 r2 
+2 o4 g2&ggdga4&ab4&b
+2 a4g4&gg4&gef+g4&gg4&gf+g 
+2 ((r12>b12g12e12g12e12)) 
+2 o3 g6&g48g6&g48g
+2 a2a2t94a2t58a2t102; &a64 
+2 @1 g1>c4&cd+4f4g1&g
+2 >c4&cd+4<g4 
+2 @2 g1&gg+4&g+g+2b1&ba4&aa4
+2 )f+4d2&dc2e1(
+2 [c4&cc2&c]3 c4&cc2g1f+2&f+r2>
+2 t90c2&t87c4&t84c&t76c<t66b1
+
+3 l8 q8 @0 v9 r2
+3 o3 b2&bbbbb4&bb4&b
+3 b4>e4&ee2&ee4&ee2&e>b12g12e12
+3 g12e12c+12<b12g12e12g12e12c+12
+3 d2d2t94d2t58d2t102 ; &d64

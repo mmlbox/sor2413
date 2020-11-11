@@ -1,0 +1,88 @@
+;[gain=1.0;name=sc88e027]
+#opll_mode 0
+#tempo 104
+#title { "Azorba Kingdom (Romancia) / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation" }
+
+@v15 = { ; 
+;       TL FB
+        12, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 3, 1, 0, 0, 1, 0, 0, 0, 0, 0,
+  15,15, 0, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+; 9ABCDEFG !
+
+*0={@6  v10 o6}
+*1={@15 v10 o5}
+
+9A l8 q8 
+9 *0 h16,3,0,1 \0
+A *1 h16,3,0,1 \0
+9A [;L 
+9A d4a8d8d8a8g8f8f2e4<b8>d8c+24d24c+24<b16>c+16d2&d4>
+9A d4a8d8d8a8g8f8f2e4<b8>d8c+24d24c+24<b16>c+16d2&d4<
+9A a32r16.g+2r8a32r16.g2r8g32r16.f8e8f8a8>d8<g+2
+9A r8e16f16g2f16g16f8d2&d4r4.<a8b8>c+8
+9A ]0
+
+BC l8 q8
+BC [;L 
+BC r8 
+B *0 \1 (3
+C *1 \0 (3
+BC d4a8d8d8a8g8f8f2e4<b8>d8c+24d24c+24<b16>c+16d2&d4>
+BC d4a8d8d8a8g8f8f2e4<b8>d8c+24d24c+24<b16>c+16d2&d8<
+B v10 @2  \0
+C v11 @11 \1 >>
+BC r8<e8>e8b8>e8<b8r8<d+8>d+8a+8>d+8<a+8
+B *0 < (3 \1
+C *1 < (3 \0
+BC d2&d4 d2&d4 e2a4 d2&d4& [d8&(]6 
+BC ]0
+
+@e0={0,0,f73}
+
+DE l16 q8 [;L
+DE hf
+D v11 @13 o3 \0
+E v11 @14 @e0 o4 so q2 \0
+DE d>dd<d>d<d>dd< 
+DE [[d>dd<d]2 >d<d>dd<]3 d>dd<d d>dd<d> d<d>dd< 
+DE [[d>dd<d]2 >d<d>dd<]3 d>dd<d
+DE r8
+D *0 q8 \1 <<
+E *1 q8 \0 <<
+DE <e8>e8<e4.r8d+8>d+8<d+4. 
+DE h20,1,0,1 
+DE d2&d4 d2&d4 e2a4 d2&d4& [d8&(]6
+DE ]0
+
+@e9={1,0,fc0=160}
+@e10={1,0,f0=24}
+@e11={1,0,fc0=160}
+
+123 v11
+
+1 l8 q8 @9 k4 h20,1,4,1 
+1 [;L 
+1 o3 b2a+4a2>d8<a8g+2g4f2&f4b2a+4a2>d8<a8g+2g4f2&f4>
+1 d32r16.d2r8c+32r16.c+2r8>d4c+4c4<b8e8g+8b8>e8d8d4<b4>c+4d16r16<a8
+1 a+8a8g8e8f32e32f4r16c+8d8e8
+1 ]0
+
+2 l8 q8 \1 (2 @9 k4
+2 [;L 
+2 r8 o3 b2a+4a2>d8<a8g+2g4f2&f4b2a+4a2>d8<a8g+2g4f2&f4>
+2 d32r16.d2r8c+32r16.c+2r8>d4c+4c4<b8e8g+8b8>e8d8d4<b4>c+4d16r16<a8
+2 a+8a8g8e8f32e32f4r16c+8d8e8
+2 ]0
+
+3 l16 q8 ( [;L 
+3 o2 @10 k0
+3 d >> dd << d >> d << d >> dd << 
+3 [[d >> dd << d]2 >> d << d >> dd <<]3 d>>dd<<dd>>dd<<d>>d<<d>>dd<<
+3 [[d >> dd << d]2 >> d << d >> dd <<]3 d>>dd<<d
+3 (2 r8. o5 e8>e8b8>e8<b8r8<d+8>d+8a+8>d+8<a+16 
+3 @11 k4 h20,2,2,1 ) g32r16.f8e8f8a8>d8<g+2r8e16f16g2f16g16f8d2&d4r4.<a8b8>c+8
+3 hf ) ; v10
+3 ]0

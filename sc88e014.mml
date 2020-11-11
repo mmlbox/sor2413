@@ -1,0 +1,151 @@
+;[gain=1.0;name=sc88e014]
+#opll_mode 0
+#tempo 89 ; 88.78
+#title { "Desert (The Cursed Oasis) / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation"}
+
+@v15 = {
+;       TL FB
+        23, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  10, 6, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+9A l8 q8 [;L 
+9 @15 v12 o4 
+A @15 v12 o4 \1
+9A h8,3,0,1 
+9A f4c>c4<a+16g+16a+4gd+4&d+
+9A g+4g16f16g+a+g+g+4g16f16g4&gf4c>c4<a+16
+9A g+16a+4gd+4&d+g+4g16f16gd+cf2&f4>c4
+9A c16c+16d+c+c<a+4a+16>c16<a+4&a+g+4g+16a+16>c<a+
+9A g+g4fd+4d+>c4c16c+16d+c+c<a+4>cc+4<a+g+4
+9A g+16a+16g4g+g2&g4f4c>c4<a+16g+16a+4gd+4&
+9A d+g+4g16f16g+a+g+g+4g16f16g4&gf4c>c4
+9A <a+16g+16a+4gd+4&d+g+4g16f16gd+cf2&f4 
+
+9 @0@e2 v12 so >
+A @6@e3 v12 so > \1
+9A <g+8>g+16g+16g+8g+8f8f8
+9A e8>e16c16e8<e8e8e8
+9A c8>c16c16c8<g+8d+8c8
+9A d8>d16d16d8<a+8>d8d8
+9A f16c+16<g+16g+16>c+8&c+16<c+16
+9A f16g+16>c+16f16d+16<a+16g16g16
+9A g4&g8d+8g+16a+16g+1r4
+
+9 @15 v12 o4 
+A @15 v12 o4 \1
+9A c8
+9A ]0
+
+BC l8 q8 [;L 
+B @13 v11 so q1 o2 > 
+C @13 v11 so q1 o2 > \1
+BC f>cfgg+f<d+ga+>d+fg<c+
+BC g+>c+d+fg+<cega+>ce<f>cfgg+
+BC f<d+ga+>d+fg<c+g+>c+c<gcf>cf
+BC gg+g<g+>d+g+>c<a+g+<a+>c+fa+f<a+c+
+BC fg+>c+<g+fd+ga+>d+<a+gg+>d+g+>c<a+
+BC g+<a+>c+fa+f<a+c+fg+gb>f<ceg
+BC >ceg<f>cfgg+f<d+ga+>d+fg<c+
+BC g+>c+d+fg+<cega+>ce<f>cfgg+
+BC f<d+ga+>d+fg<c+g+>c+c<gcf>cf
+BC c<g+cfg+>c<g+cf>cege<g>c<g+
+BC >cd+g+d+c<a+>dfa+f<a+>c+fg+fc+
+BC <g+d+ga+>d+fg<f>cf<fa+>f<f>cf
+BC ec<c
+BC ]0
+
+@e2={0,0,cf}
+@e3={0,0,bdef}
+
+DE l16 q8 [;L
+D @0@e2 v12 o4 so >
+E @6@e3 v12 o4 so > \1
+DE h10,1,3,1
+DE [f16g+16g16g+16a+16g+16]2 
+DE [d+16g16f16g16g+16g16]2 
+DE [c+16f16g+16f16c+16f16]2 
+DE c16f16g+16f16c8c16e16g16e16c16e16 
+DE [f16g+16g16g+16a+16g+16]2 
+DE [d+16g16f16g16g+16g16]2 
+DE c+16f16g+16f16c+16f16c16d+16
+DE g16d+16c16d+16f16g+16g16g+16
+DE a+16g+16f16g+16g16g+16a+16g16 
+DE [g+16d+16a+16d+16>c16<d+16]2 
+DE [a+16f16>c16<f16a+16f16]2 
+DE [g+16f16a+16f16g+16f16]2 
+DE g16d+16g+16d+16g16d+16g16d+16g+16d+16a+16d+16 
+DE [g+16d+16a+16d+16>c16<d+16]2 
+DE [a+16f16>c16<f16a+16f16]2 
+DE g+16f16a+16f16g+16f16b16>d16f16
+DE g+16a+16g+16g+16g16g16e16e16c16
+DE c16<a+16a+16g16g16e16 
+DE [f16g+16g16g+16a+16g+16]2 
+DE [d+16g16f16g16g+16g16]2 
+DE [c+16f16g+16f16c+16f16]2 
+DE c16f16g+16f16c8c16e16g16e16c16e16 
+DE [f16g+16g16g+16a+16g+16]2
+DE [d+16g16f16g16g+16g16]2 
+DE c+16f16g+16f16c+16f16c16d+16 
+DE g16d+16c16d+16f16g+16g16g+16
+DE a+16g+16f16g+16g16g+16a+16g16 
+DE h8,3,0,1
+DE f8>f16e16f8c8<a+8g+8
+DE g8>g16f16g8c8<a+8g8
+DE g+8>g+16g16g+8c8<a+8g+8
+DE a+8>a+16a16a+8d8f8g8
+DE g+16g16f16d+16f8&f16<f16g+16>
+DE c+16f16g+16g16f16d+16c16
+DE d+4&d+8c8f16g16f1r4r8
+DE ]0
+
+@e9={0,0,eb}
+
+1 l8 q8 [;L 
+1 @9 v10 o5 
+1 c4<g+>g+4f16f16d+4<a+g4&g>f4c+16c+16
+1 fffe4e16c16e4&ec4<f>f4d+16c+16d+4<a+
+1 g4&g>c+4c16<a+16>c<gd+g+2&g+4>g+4g+16g+16>c
+1 <g+g+f4f16f16f4&ff4f16f16g+ffd+4<a+
+1 a+4&a+>g+4g+16g+16>c<g+g+f4fa+4ff4f16f16
+1 d4de2&e4c4<g+>g+4f16f16d+4<a+g4&g>f4
+1 c+16c+16fffe4e16c16e4&ec4<f>f4d+16c+16
+1 d+4<a+g4&g>c+4c16<a+16>c<gd+g+2&g+4 [r16
+1 f16g+16f16c16f16]2 [r16e16g16e16c16e16]2 [r16
+1 d+16g+16d+16c16d+16]2 [r16f16a+16f16d16f16]2 [r16
+1 c+16f16c+16<g+16>c+16]2 [r16d+16g16d+16<a+16>d+16]2 
+1 [g+16f16]3 [a+16f16]3 [>c16<f16]3 c16e16g16a+16>c16e16
+1 ]0
+
+2 l8 q8 [;L 
+2 @9 h10,3,0,2 v10 o4 g+4f>f4c16c16g4d+<a+4&a+>c+4
+2 <g+16g+16>c+c+c+c4c16<g16>c4&cg+4rg+4g16f16
+2 g4d+<a+4&a+>f4&fd+c<g>c2&c4d+4d+16
+2 d+16g+d+d+c+4c+16c+16c+4&c+c+4c+16c+16fc+c+
+2 <a+4gg4&g>d+4d+16d+16g+d+d+c+4c+f4c+c+4
+2 c+16c+16<b4b>c2&c4<g+4f>f4c16c16g4d+<a+4&
+2 a+>c+4<g+16g+16>c+c+c+c4c16<g16>c4&cg+4rg+4
+2 g16f16g4d+<a+4&a+>f4&fd+c<g>c2&c4 
+2 [r16c16f16c16<g+16>c16]2 [r16c16e16c16<g16>c16]2 
+2 [r16c16d+16c16<g+16>c16]2 [r16d16f16d16<a+16>d16]2 
+2 [r16<g+16>c+16<g+16f16g+16]2 [r16a+16>d+16<a+16g16a+16]2 
+2 [>f16<g+16]9 g16>c16e16g16g16g16
+2 ]0
+
+3 l8 q8 [;L 
+3 @9 \1 v10 o5 
+3 c4<g+>g+4f16f16d+4<a+g4&g>f4c+16
+3 c+16fffe4e16c16e4&ec4<f>f4d+16c+16d+4
+3 <a+g4&g>c+4c16<a+16>c<gd+g+2&g+4>g+4g+16g+16
+3 >c<g+g+f4f16f16f4&ff4f16f16g+ffd+4
+3 <a+a+4&a+>g+4g+16g+16>c<g+g+f4fa+4ff4f16
+3 f16d4de2&e4c4<g+>g+4f16f16d+4<a+g4&g
+3 >f4c+16c+16fffe4e16c16e4&ec4<f>f4d+16
+3 c+16d+4<a+g4&g>c+4c16<a+16>c<gd+g+2&g+4 
+3 [r16f16g+16f16c16f16]2 [r16e16g16e16c16e16]2 
+3 [r16d+16g+16d+16c16d+16]2 [r16f16a+16f16d16f16]2 
+3 [r16c+16f16c+16<g+16>c+16]2 [r16d+16g16d+16<a+16>d+16]2 
+3 [g+16f16]3 [a+16f16]3 [>c16<f16]3 c16e16g16a+16>c16e16
+3 ]0
+

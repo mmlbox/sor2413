@@ -1,0 +1,68 @@
+;[gain=1.0;name=sc88e056]
+#opll_mode 0
+#tempo 76
+#title { "Traveler's Inn / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation"}
+
+@v15 = {
+;       TL FB
+        32, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 4, 0, 0, 1, 0, 0, 0, 1, 0,
+  13, 3,15, 7, 0, 1, 0, 1, 1, 0, 0 }
+
+9A l8 q8 [;L
+9 @15 v11 o6 
+A @2  v11 o6
+9A d+6d6c6d6c6<a+6>c6<c12d12d+12f12g2
+9A >d+6d6c6d6d+6f6d+2r24d+4r12d6d+6c6<g+4&g+12
+9A >f6d+6d12d+12d12<a+12g4&g6r12g6g+6a+6>c6d6d+6
+9A f6g6a+6g+6g2g6f6d+6f2f6d+6d6d+2d+6d6c6
+9A d6<a+4&a+12>d+6f6g6f6d6<a+6>c1
+9A ]0
+
+BC l8 q8 [;L 
+B @15 v11 \-1 o5
+C @2  v11 o5
+BC g2f2d+2c4&c12<b6>g2f2c2r48c4
+BC r12r48<a+6g+2a+2g2>d12d+12d12<a+12g6g+2a+2g2>d12d+12
+BC d12<a+12g6g+2a+2b2>c2>c2<a+2>c2<a+2g1
+BC ]0
+
+DE l8 q8 [;L 
+D @15 v11 o4
+E @2  v10 o4
+DE c12g12>d12<g12>d+12<g12<a+12>f12>c12<f12>d12<f12<g+12
+DE >d+12g+12d+12g+12d+12<g12>d12f12d12g12d12c12g12>d12<g12>d+12
+DE <g12<a+12>f12>c12<f12>d12<f12<g+12>d+12g+12d+12a+12d+12g+4r<g6
+DE f12g+12>c12d+12c12<g+12f12a+12>d12f12d12<a+12 
+DE [d+12g12a+12>d12<a+12g12]2 f12g+12>c12d+12c12<g+12f12a+12>d12f12d12<a+12 
+DE [d+12g12a+12>d12<a+12g12]2 f12g+12>c12d+12c12<g+12f12a+12>d12f12d12<a+12
+DE g12b12>d12f12d12<b12c12g12>d12<g12>d+12<g12 
+DE [f12g+12>c12d+12c12<g+12g12a+12>d12f12d12<a+12]2 
+DE c12g12>c12d12d+12g12>c2
+DE ]0
+
+@e0={1,0,fdc}
+@e1={1,0,fdc6=172.0=172}
+
+1 l8 q8 k4 [;L 
+1 @0 v8 o4 c2g2>c2f6d+6d6d+2d2g2&g6r4r
+1 g2f2f2d+2g2f2f2d+2g2f2f2g2<g2f2g2f2 
+1 @1 d+1
+1 ]0
+
+2 l8 q8 k4 [;L 
+2 \1 @0 v8 o4 
+2 c2g2>c2f6d+6d6d+2d2g2&g6r4
+2 rg2f2f2d+2g2f2f2d+2g2f2f2g2<g2f2g2
+2 f2 
+2 @1 d+1 
+2 ]0
+
+3 l8 q8 k4 [;L 
+3 @0 h20,3,0,5 v6 
+3 o3 g2>c2g2>d6c6<b6>c2<a+2>c2&
+3 c6r4rc2d2<a+2g2>c2d2<a+2g2>c2d2d2d+2<a+2
+3 a+2a+2a+2 @1 >c1
+3 ]0
+

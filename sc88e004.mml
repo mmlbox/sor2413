@@ -1,0 +1,172 @@
+;[gain=1.0;name=sc88e004]
+#opll_mode 0
+#lfo_mode 0
+#tempo 180
+#title { "Dungeon (Lost Cane of the King) / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation" }
+
+@v15 = { ; 0
+;       TL FB
+        22, 5,
+; AR DR SL RR KL ML AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+   7, 5, 1, 6, 0, 8, 0, 0, 1, 0, 0 }
+
+@v16 = { ; 0
+;       TL FB
+        23, 0,
+; AR DR SL RR KL ML AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+   8, 5, 1, 6, 0, 4, 0, 0, 1, 0, 0 }
+   
+@v17 = { ; 1
+;       TL FB
+        30, 0,
+; AR DR SL RR KL ML AM VB EG KR DT
+  14, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0,
+   4, 0, 0, 5, 0, 4, 0, 0, 1, 0, 1 }
+
+@v18 = { ; 1
+;       TL FB
+        30, 0,
+; AR DR SL RR KL ML AM VB EG KR DT
+  14, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0,
+   7, 0, 0, 5, 0, 4, 0, 0, 1, 0, 1 }
+   
+@v19 = { ;  
+;       TL FB
+        12, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 8, 0, 0, 0, 0, 1,
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1 }
+
+;9ABCDE3 !
+
+; @e6={0,0,@3f@6}
+
+9A l8 q8
+9A [
+9 @15 o4 v10 so \1 
+A @6  o6 v9 so \0
+9A h15,6,0,1
+9A er4e2&eb4ag4b4de2&ef+gb4&ba4g4a4b1&b2&b
+9A >ef+b1&b1&b<b4ae2&e4&ef+4g4
+9A a4g1f+2ed4&db4ae2&e4&ef+4g4
+9A a4g1a1)
+9A [b2&b>ef+gb<b>a<a>g<g>a<a]2
+9A a2&a>df+ab4>c<b4a4&a
+9A b2&b4ba4&af+4d+4c4<b2&b>ef+g
+9A b<b>a<a>g<g>a<ab2&b>ef+gb<b
+9A >a<a>g<g>e<ec2e4g4f+2g4a4g1&gra2&a4r
+9 @5  o7 v9 \1
+A @17 o6 v10 \0
+9A b2
+A @18
+9A agf+g4&g<b4&b>e4
+9A f+d<a>ad<a>gag4&gf+2&f+e2&
+9A ec<g>ce4f+4g4e4f+2&f+d<a>df+ed+agf+>c<b&
+9A [bgf+e<b>ef+g]6 bf+ef+ed+c<babagf+ed+f+
+9 @5  o5 v8 \1
+A @16 o4 v9 \0
+9A g1a1f+1g1g1<g2>g2f+1d+f+af+a>cd+f+
+9A ]0
+
+;@e10={0,0,@13.8@3f}
+@e10={0,0,@19f}
+;@e11={0,0,@13e@9eef[\-1f\1f\1f\-1f]}
+@e11={0,0,@11.0@3f[\-1f\1f\1f\-1f]}
+
+BC l8 q8
+BC [ 
+B @6 o5 v9 so \1
+C @5 o4 v9 so \0
+BC h15,6,0,1
+BC br4b2&b>d2g2<b2&
+BC bb>cf+4&f+e4d4e4f+1&f+1&f+2&f+
+BC >ef+b1&b<f+4&f+<b4>c<bf+ecb4>c4
+BC d4e1d2<a2f+4&f+<b4>c<bf+ecb4>c4d4
+BC e1f+1g1>e2b2g1e2g2f+1a2>d2<b1a2>c2<g1>e2
+BC b2g1e2g2ec<bgeceg>d<af+e
+BC d<a>df+b1&brf+2&f+4r4 
+B @5  o7 v8 \-1
+C @17 o6 v9 \0 
+BC b2agf+g4&g<b4&b>e4f+d<a>ad<a>g
+BC ag4&gf+2&f+e2&ec<g>ce4f+4g4
+BC e4f+2&f+d<a>df+ed+agf+>c<b4&b
+B @3@e10 v11 o4 \1 
+C @9@e11 v13 o5 \0
+BC e2&e4&ef+4g4a4b1&b4>c4<b4
+BC a4b1e2g2f+ed+agf+>c<ba>d+c<b>agf+a 
+B @5  o5 v8 \1
+C @16 o4 v9 \0
+BC e1f+1d1e1e1<e2>e2d+1<b>d+f+d+f+ab>d+
+BC ]0
+
+@e14={0,0,fc0=4}
+@e13={0,0,@6f@13f}
+
+DE l8 
+DE [ 
+D @14@e14 o3 v12
+E @13@e13 o3 v12
+DE e4>e<e4e>e4< d4>d<d4d>d4< c4>c<c4c>c4< <b4>b<b4b>b4
+DE e4>e<e4e>e4<d4>d<d4d>d4<c4>c<c4c>c4< <b4>b<b4b>b4 
+DE [c4>c<c4c>c4<]2 [d4>d<d4d>d4<]2 [c4>c<c4c>c4<]2 [d4>d<d4d>d4<]2 
+DE [e4>e<e4e>e4<]2 [c4>c<c4c>c4<]2 [d4>d<d4d>d4<]2 e4>e<e4e>e4<<b4>b<b4b>b4 
+DE [e4>e<e4e>e4<]2 [c4>c<c4c>c4<]2 <a4>a<a4a>a4 <b4>b<b4b>b4 c4>c<c4c>c4< d4>d<d4d>d4<
+D [e4e4(e4e4)]2 [d4d4(d4d4)]2 [c4c4(c4c4)]2 d4d4(d4d4)d+4
+E [e4(e4e4e4)]2 [d4(d4d4d4)]2 [c4(c4c4c4)]2 d4(d4d4d4)d+4
+DE >d+<d+4d+>d+<d+ 
+DE [e4>e<e4e>e4<]2 [d4>d<d4d>d4<]2 [c4>c<c4c>c4<]2 < [b4>b<b4b>b4<]2 >
+DE c4>c<c4c>c4<d4>d<d4d>d4<<b4>b<b4b>b4e4>e<e4e>e4<c4>c<c4c>c4<<a4>a<a4a>a4< 
+DE [b4>b<b4b>b4<]2
+DE ]0
+
+@e1={1,0,d}
+@e2={1,0,db}
+@e3={1,0,d}
+@e4={1,0,ba0=96}
+
+1 l8 q8 [
+1 @1 v11 o3 k3
+1 e1f+1g1a1e1f+1g1a1e1&e1d1&
+1 d1e1&e1d1&d1ef+gab2>ef+ga
+1 b1g2f+2e2d1e2f+2g1f+1<ef+gab2>ef+
+1 gab1g2f+2e2g1a1e 
+1 @2 v14 o6 
+1 bgec<bge
+1 @3 v11 <dr4d2&d<b1>e2<b2>d1<a4f+4g4a4g1g1a1b1 
+1 [e4&e>e4&eb1&b4<]3 > b1b1 
+1 @4 v14 o7
+1 g4&ge4&eg4a4&a>d4&d<a4f+4&f+d4&df+4g2&gag
+1 f+e4&ec4&ce4<a4&a>c4&ce4d+4&d+e4&ef+1&f+4
+1 ]0
+
+2 l8 q8 [
+2 @1 v11 \1 r8 o3 k3
+2 e1f+1g1a1e1f+1g1a1e1&e1
+2 d1&d1e1&e1d1&d1ef+gab2>ef+
+2 gab1g2f+2e2d1e2f+2g1f+1<ef+gab2
+2 >ef+gab1g2f+2e2g1a1e6&e48 
+2 @2 \1 o6 
+2 bgec<bge16 
+2 @3 v11 <dr4d2&d<b1>e2<b2>d1<a4f+4g4a4g1g1a1b1 
+2 [e4&e>e4&eb1&b4<]3 > b1b2&b4&b 
+2 @4 \0 v14 o5
+2 g4&ge4&eg4a4&a>d4&d<a4f+4&f+d4&
+2 df+4g2&gagf+e4&ec4&ce4<a4&a>c4&ce4d+4&d+e4&ef+1&f+4
+2 ]0
+
+@e7={2,0,c90=48}
+@e8={2,0,c90=30}
+@e9={2,10,c90=30}
+
+3 l8 q8 @9 [
+3 v13
+3 [@8 cc @9c @8c]14 c@9c16c16c@8c cc@9c@8c 
+3 [@8 cc @9c @8c]15 c@9ccc 
+3 [@8 cc @9c @8c]15 c@9ccc 
+3 [@8 cc @9c @8c]15 c@9c@8c@9c
+3 [@7c4c4c4c4c4c4c4n28c4n0]3 @7c4c4c4c4c4n28c@7c4 @8c@9n28cc 
+3 [@8 cc @9c @8c]14 c@9n28ccc@8c@9n28ccc 
+3 [@8 cc @9c @8c]14 c@9ccc@8c@9ccc
+3 ]0
