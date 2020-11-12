@@ -16,7 +16,7 @@
          3, 0,
 ; AR DR SL RR KL MT AM VB EG KR DT
   15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
-  12, 6, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+  15, 5, 2, 7, 0, 4, 0, 0, 1, 0, 0 }
 
 @v17 = { ; Guitar
 ;       TL FB
@@ -25,21 +25,22 @@
   15,12, 1, 0, 0, 3, 0, 0, 1, 0, 0,
   14, 7, 1, 0, 0, 1, 0, 1, 0, 0, 0 }
 
-;9ABC123 !
+;BC123 !
+@e4={0,0,@5d@6e}
 
 9A l8 q8 
 9 v11 @15 h20,3,0,2 o2 \6 
 A v12 @15 h20,3,0,2 o1 \5
 9A c1&c2&c4&c6&c16 r48 \0
-9A [;L $
-9 @16 v11 o3
-A @16 v11 o2 \1
+9A [;L
+9 @16   v11 o3
+A @6@e4 v11 o2 \1 
 9 [e4&e6&e16r48b4&b6&b16r48e4&e6&e16r48d4&d6&d16r48]2 
 A [b4&b6&b16r48>f+4&f+6&f+16<r48b4&b6&b16r48a4&a6&a16r48]2 
 
 9A [ 
-9 @16 v11 o3
-A @16 v11 o2 \1
+9 @16   v11 o3
+A @6@e4 v11 o2 >> \1
 9 [e24r48e24r48r16f12&f48r48f24r48f24r48r16g24r48g24r48r16f12&f48r48g24r48f12&f48r48]2 
 A [b24r48b24r48r16>c12&c48r48c24r48c24r48r16d24r48d24r48r16c12&c48r48d24r48c12&c48r48<]2 
 9 e2&e4&e6&e16r48f4&f6&f16r48f24r48f24r48r16f24r48r16f24r48f12&f48r48
@@ -58,7 +59,7 @@ A @9  o5 v9
 9A ]0
 
 @e0={0,0,0f=16c=200.8=200}
-@e1={0,0,ffe}
+@e1={0,0,f}
 @e2={0,0,@14fd840}
 
 BC l8 q8 
@@ -75,7 +76,7 @@ BC [e16]12 > d16d16d+16d+16 [e16]16
 BC [f16]16 [e16]16
 BC ]0
 
-@e30={0,0,@10f@14d852}
+@e30={0,0,f@14fd852}
 
 *0={r}
 *1={@11e} ;SD
@@ -95,7 +96,7 @@ D [l16*bl32*h*hl16*sl32*h*h]15
 D r4; [e32]8 
 D ]0
 
-@e31={0,0,@10f@12c752}
+@e31={0,0,@10f@12d852}
 *2={@12e} ;SD
 #macro_offset {b=0,s=2,h=0,q=0}
 
@@ -113,29 +114,29 @@ E ]0
 
 *3={so e sf} ;BD1
 #macro_offset {b=3,s=0,h=0}
-F y14,32v14
+F y14,32
 F l32 q8 r8 o2 q3 r1r2r4 
 F h1,32,0,-24 v13 o3 *s*s*s*s 
 F [;L 
-F hosoq4
+F hoso q4
 F l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
-F ))soq1>g32c32<a32e32q4sf(( 
+F >soq3>g32c32<a32e32q4sf<
 F [l16*bl32*h*hl16*sl32*h*h]31
-F ))soq1>[a32]4[c32]4<q4sf((
-F [l16*bl32*h*hl16*sl32*h*h]15 
-F ))hfsfq8<[e32]8>((
+F )soq1>[a32]4[c32]4<q4sf(
+F [l16*bl32*h*hl16*sl32*h*h]15
+F )hfsfq8[e32]8(
 F ]0
 
-*4={q8c} ; BD noise
-*5={soq4)2c(2sf} ;SD
-*6={q8c} ;HH
+*4={q8(4c)4} ; BD noise
+*5={soq4csf} ;SD
+*6={q8(2c)2} ;HH
 #macro_offset {b=4,s=5,h=6,q=0}
 
-G l32 q8 r8 o1so r1r2r4 
-G v11@14 *s*s*s*s
+G l32 q8 r8 o1 r1r2r4 
+G v13@14 *s*s*s*s
 G [;L 
 G l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
-G ))c32c32c32c32(( 
+G c32c32c32c32
 G [l16*bl32*h*hl16*sl32*h*h]31 
 G [c32]4[c32]4
 G [l16*bl32*h*hl16*sl32*h*h]15 
@@ -152,8 +153,7 @@ G ]0
 
 1 l8 q8 @9 o3 [c_<<c>>c_<<c>>(]8 
 1 [;L 
-1 h16,3,0,3 @10 v10 o5 
-1 [e2b2e2d2]2 v10 hf
+1 h16,5,0,3@p32 @10 v9 o5 [e2b2e2d2]2 hf )
 1 < [[@11 g+16g+16r16aa16a16r16b16b16r16ab16a]2 g+1a2a16a16r16a16r16b16>c<]2 
 1 @11 >b1e1<b1b1
 1 ]0
