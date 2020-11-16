@@ -1,4 +1,4 @@
-;[gain=1.0;name=sc88e000]
+;[gain=1.0;name=so88e000]
 #opll_mode 0
 #tempo 102 ;@t208 
 #title { "Opening / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation"}

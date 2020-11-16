@@ -1,0 +1,173 @@
+;[gain=1.0;name=so88e005]
+#opll_mode 0
+#tempo 85 ; 85.66
+#title { "Hydra (Lost Cane of the King) / Music from Sorcerian / Copyright (c) Nihon Falcom Corporation"}
+
+@v15 = { ; Slap
+;       TL FB
+        36, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10, 2, 0, 0,10, 0, 0, 1, 0, 0,
+  15, 6, 2, 4, 0, 0, 0, 0, 0, 0, 1 }
+
+@v16 = { ; Slap long
+;       TL FB
+        36, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10, 2, 0, 0,10, 0, 0, 1, 0, 0,
+  15, 5, 2, 2, 1, 0, 0, 0, 0, 0, 1 }
+  
+
+@e0={0,0,@13c@3f}
+@e1={0,0,@14f@9f}
+
+@e2={0,0,@6f@5f}
+@e3={0,0,@4f@6f}
+@e4={0,0,@5f@6f}
+
+9A l24 q8 [;L
+9 @5@e2 so hf v9  o3 >  \0
+A @6@e3 so hf v9  o3 >> \1
+9A d4&d16&d%2rr%2g32rr%2
+9A a4&a12&a32rr%2>c32rr%2d4&d12&d32rr%2
+9A e32rr%2f16&f%2rr%2ffedgfga+
+9A aga4&a16&a%2rr%2a32rr%2g6&g16&
+9A g%2rr%2>c16&c%2rr%2e16&e%2rr%2d4&
+9A d6&d32rr%2d16&d%2rr%2c+16&c+%2rr%2d16&
+9A d%2rr%2e16&e%2rr%2
+9 (
+9A f12&f32rr%2r12f32r
+9A r%2g32rr%2a32rr%2gece4&e16&e%2r
+9A r%2e12&e32rr%2r12e32rr%2f32rr%2g32rr%2
+9A f6&f32rr%2d16&d%2rr%2e16&e%2rr%2
+9A f12&f32rr%2r12f32rr%2g32rr%2a32rr%2ge
+9A ce4&e16&e%2rr%2e12&e32rr%2r12e32r
+9A r%2f32rr%2e32rr%2d2&d6&d32rr%2de
+9A fef g24 
+9 <
+A <<
+9 @0@e0 v11 h24,3,0,3 sf \0
+A @1@e1 v11 h24,3,0,3 sf \1
+9A <d4&d8a4&a8f12g12
+9A a12>c4&c8<a+8g4g12f12e12d4&d8&d+%2&
+9A e%2&f%2&f+%2&g%2&g+%2&a%2&a+%2&b%2&
+9A >c%2&c+%2&d4&d%2d12c12<a+12a4&a8&a+%2&
+9A b%2&>c%2&c+%2&d%2&d+%2&e%2&f%2&f+%2&
+9A g%2&g+%2&a2&a%2
+9A fgaf4fgag6f
+9A ec8efedefd8d12e12f12e6edc+4
+9A fgaf4fgag6fec8efef4d4<a+8>c8d8e8 
+9A [aga>c<a+ga2gfga+ag]2 
+9A [aga>c<bg]4 
+9A fffffffr12g12a4&a6>c12d2&d
+9A ]0
+
+BC l24 q8 [;L 
+B @5@e2 so hf v9  o2 >  \-1
+C @6@e3 so hf v9  o2 >> \0
+BC a4&a16&a%2rr%2>d32rr%2
+BC d4&d12&d32rr%2g32rr%2a4&a12&a32rr%2
+BC a32rr%2>d16&d%2rr%2ddc<a+>edeg
+BC fef4&f16&f%2rr%2d32rr%2c6&c16&
+BC c%2rr%2g16&g%2rr%2>c16&c%2rr%2<a+12&a+32
+BC rr%2afg4&a4&b16&b%2rr%2>c+16&c+%2rr%2<
+B (
+BC a12&a32rr%2r12>d32rr%2e32rr%2f32r
+BC r%2ec<g>c4&c16&c%2rr%2<c12&c32rr%2
+BC r12c32rr%2d32rr%2e32rr%2d6&d32rr%2
+BC f16&f%2rr%2g16&g%2rr%2a12&a32rr%2r12>d32
+BC rr%2e32rr%2f32rr%2ec<g>c4&c16&c%2
+BC rr%2<c12&c32rr%2r12c32rr%2d32rr%2e32r
+BC r%2g6&g32rr%2a6&a32rr%2a+6&a+32rr%2
+BC a+>cdcde 
+B <
+C <<
+B @0@e0 v9  h24,3,0,3 sf \-1
+C @1@e1 v9  h24,3,0,3 sf \0
+BC r24
+BC <d4&d8a4&
+BC a8f12g12a12>c4&c8<a+8g4g12f12e12d4&d8&
+BC d+%2&e%2&f%2&f+%2&g%2&g+%2&a%2&a+%2&
+BC b%2&>c%2&c+%2&d4&d%2d12c12<a+12a4&a8&
+BC a+%2&b%2&>c%2&c+%2&d%2&d+%2&e%2&f%2&
+BC f+%2&g%2&g+%2a4&a6&a&a%2 
+BC defd4defe6dc<g4a+>cd<a+8a+12>c12d12
+BC c+6c+<ba4>defd4defe6dc<g4>d4<a4g8a8a+8>c8 
+BC [fefagef2eeeeee]2
+BC [fefage]4 
+BC dddddddr12e12f4&f6g12a2&a
+BC ]0
+
+@e20={0,0,ffe}
+@e21={0,0,f0=4}
+
+DE l24 q8 [;L 
+D @13 @e20 v13 o3 
+E @15      v13 o4 q7 \1
+DE [d>d<d]12 < [a+>a+<a+]2 > [c>c<c]2 
+DE [d>d<d]4 [c>c<c]4 < [a+>a+<a+]4 [a>a<a]2 b>b<b>c+>c+<c+ 
+DE [d>d<d]4 [c>c<c]8 [d>d<d]2 <a+>a+<a+>c>c<c
+DE [d>d<d]4 [c>c<c]8 
+E @16 
+DE <a+>dfa+2&a+8
+E @15 
+DE <a+>a+<a+>c>c<c 
+DE [d>d<d]8 [c>c<c]8 <
+DE [a+>a+<a+]8 [a>a<a]6 b>b<b >c+>c+<c+ 
+DE [d>d<d]4 [c>c<c]4 < [a+>a+<a+]4 [a>a<a]4 >
+DE [d>d<d]4 [c>c<c]4 < [a+>a+<a+]4 g>g<g a>a<a 
+DE a+>a+<a+>> c<c>c< 
+DE [d>d<d]6 )) cccccc ((
+DE [d>d<d]6 )) cccccc ((
+DE [d>d<d ga>c<]4 a+a+a+a+a+a+a+r12c12d 
+DE [d>d<d]8
+DE ]0
+
+@e10={1,0,fedc}
+@e14={1,0,fc}
+
+1 l24 q8 [;L 
+1 @10 v10 o2 
+1 drda4&a8>drda4&a8>drda4a8a+4>c4d2e4c4<g2>e4f8g8 
+1 [dfa]4 [ceg]8 [dfa]2 <a+a+a+>ccc 
+1 [dfa]4 [ceg]8 <a+6gfg2a+8>c8 
+1 [d<a>d]8 [ece]8 [fdf]8 [ec+e]4 
+1 a+4a8g8<
+1 a4>d8f8e4c4d4<g12a+12>d12c+6c+de4<a4>d8f8e4c4<a4f4d8e8f8g8
+1 @14 ))) > [((dcdfecd2)) << cccccc |>>]2
+1 [d8c8]4 < [a+]7 r12>c12d4&d6 
+1 @10 (( o5 e12f2&f
+1 ]0
+
+2 l24 q8 [;L 
+2 \1 @10 v10 o2 
+2 drda4&a8>drda4&a8>drda4a8a+4>c4d2e4c4<g2>e4f8g8 
+2 [dfa]4 [ceg]8 [dfa]2 <a+a+a+>ccc 
+2 [dfa]4 [ceg]8 <a+6gfg2a+8>c8 
+2 \0 < [afa]8 > [c<g>c]8 [d<a+>d]8 [c+<a>c+]4 \1 
+2 a+4a8g8<
+2 a4>d8f8e4c4d4<g12a+12>d12c+6c+de4<a4>d8f8e4c4<a4f4d8e8f8g8 
+2 @14 ))) > [((dcdfecd2)) <<< cccccc |>>>]2 
+2 [d8c8]4 < [a+]7 r12>c12d4&d6
+2 @10 ( o5 e12f2&f
+2 ]0
+
+@e5={2,10,fc0=20}
+@e6={2,0,fc0=16}
+@e7={2,0,fc0=20}
+
+3 l24 q8 [;L 
+3 h1,30,0,-30
+3 @6 v10 [crc @5 c12 @6 c]7 @5 cccccc 
+3 [@6 crc @5 c12 @6 c]6 @5 c @6 cc 
+3 )) @10 o4 ho f+f+f+c+c+c+<ggg> hf (( 
+3 @6 [crc @5 c @6 rc]7 
+3 @6 [c @5 c @6 c]2 @6 [crc @5 c @6 rc]6 
+3 @6 [c8]6 @10 )) ho f+f+f+c+c+c+ hf (( 
+3 @6 [crc @5 c12 @6 c]30 
+3 @10 )) ho f+48f+48f+f+f+f+f+c+c+c+<ggg> hf (( 
+3 @6 [crc @5 c12 @6 c]3 
+3 @6 ) [c @5 cc]2 @5 ( @6 [crc @5 c12 @6 c]3 
+3 @6 ) [c @5 cc]2 @7 [c8]8 @5 [c]7 @6 cc (
+3 @5 c8 [@6 crc @5 c12 @6 c]3 @5 cccccc
+3 ]0
