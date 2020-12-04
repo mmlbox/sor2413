@@ -1,0 +1,304 @@
+;[gain=1.0;name=so88e057]
+#opll_mode 0
+#lfo_mode 0
+#tempo 104
+#title { "King Dragon" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = { ; 0
+;       TL FB
+        22, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   6, 6, 1, 1, 0, 2, 0, 0, 0, 0, 0,
+  11, 2, 2, 7, 0, 2, 0, 0, 1, 0, 0 }
+
+@v16 = { ; 4
+;       TL FB
+         0, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   0, 5, 2, 2, 0,15, 0, 0, 0, 0, 0,
+  15, 3,10, 2, 0, 0, 0, 0, 0, 0, 0 }
+
+@v17 = { ; 8
+;       TL FB
+         0, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 9, 0, 9, 0, 0, 0, 0, 0, 0, 1,
+  15, 9, 0, 5, 0, 0, 0, 0, 0, 0, 0 }
+
+@v18 = { ; 1 hamonics
+;       TL FB
+         3, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+   9, 6, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+@v19 = { ; 3 strings
+;       TL FB
+        21, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  12, 5, 5, 1, 0, 5, 0, 0, 0, 0, 1,
+   7, 6, 3, 6, 0, 1, 0, 0, 1, 0, 0}
+
+@v20 = { ; 2
+;       TL FB
+        22, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+   5, 2, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+@v21 = { ; 5 Zyuuun
+;       TL FB
+         9, 3,
+; AR DR SL RR KL MT AM VB EG KR DT
+   2, 2, 3, 1, 0, 3, 0, 0, 0, 0, 1,
+  13, 1, 2, 0, 0, 0, 0, 0, 0, 0, 1 }
+
+@v22 = { ; 6 Jyaaan
+;       TL FB
+        17, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  12, 5, 2, 1, 0, 3, 0, 1, 0, 0, 0,
+  15, 6, 1, 0, 0, 2, 0, 1, 0, 0, 1 }
+
+@v23 = { ; 9 Bell
+;       TL FB
+        34, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  13, 3,15, 6, 0, 4, 0, 0, 1, 0, 0,
+  15, 4,15, 7, 0,15, 0, 0, 1, 0, 0 }
+
+;9ABCFGH123 !
+
+@e16={0,0,acfec=128}
+@e18={0,0,f@3f8=128}
+@e31={0,0,f}
+
+9A l8 q6
+9A [
+9 @15 v12 o4 
+A @6@e31 v9 o5
+9A h24,3,0,4
+9A c24&c%2r32<a+24&a+%2r32a24&a%2r32>d24&d%2r32c+24&c+%2r32<f+1&f+2&f+4&
+9A f+24&f+%2r32r4r12>c24&c%2r32<a+24&a+%2r32a24&
+9A a%2r32>d24&d%2r32c+24&c+%2r32<f1&f2&f4&
+9A f24&f%2r32r4r12
+9 @6  v11 o5 \0
+A @18 v12 o4 \1 
+9A q8
+9 [b24>c24<b24>c24d24c24d24c24<]8 
+A [e24f24e24f24g24f24g24f24]8 
+9 @20 v11o2
+A @20 v11o3
+9A h10,3,0,3
+9 [b24&b%2r32>b&b%2r32>c&c%2r32d&d%2r32e24&e%2r32<b4&b24&b%2r32<]2
+A [e24&e%2r32>e&e%2r32f&f%2r32g&g%2r32a24&a%2r32  e4&e24&e%2r32<]2
+9 @19    v12o5\0
+A @6@e16 v12o5\1
+9A [a+48r48a+48r48a+48r48r24 r16r48]5 r16r48 >
+9A [e48 r48 e48r48 e48r48r24 r16r48]5 r16r48
+9 v13 @21 o3
+A v10 @21 o4
+9A h1,244,2,1 e1&e1&e2&e&e48r48 
+9 v13 @5  hf o2 \2
+A v14 @22 hf o3 \0
+9A e1&e1&e2&e&e48r48
+9 @19    v11o4\0
+A @6@e16 v11o4\1
+9A [e24&e%2r32f24&f%2r32e24&e%2r32f24&f%2r32g&g%2r32g24&g%2r32f24&f%2r32e24&e%2r32f24&f%2r32d&d%2r32]2
+
+9A [e24&e%2r32 f24&f%2r32 e24&e%2r32 f24&f%2r32 
+9 @2
+9A g&g%2r32 g24&g%2r32
+9 @19
+9A f24&f%2r32e24&e%2r32d24&d%2r32f&f%2r32e24&e%2r32d24&d%2r32<a&a%2r32>]2
+9 @5     v12o3\0
+A @6@e31 v12o4\1
+9A e1&e1&e2&e4&e6&e24&e%2r32r4r12
+9A ]0
+
+@e10={0,0,@10f@1b}
+@e11={0,0,@2f@1b}
+
+BC l8 q8 [ ; L
+BC [
+C \1
+BC @3 h0,16,0,-16
+BC v0 o5 [r12]5 ;c12<a+12a12>d12c+12<
+B @10@e10 o2 v12 \0
+C @11@e11 o2 v12 \1
+BC h1,24,0,32 q8
+BC [f+%4]8 [f+%6]8 [f+%8]8 [f+%10]8 [f+%12]8 [f+%16]4 hfr6
+BC ]2
+
+B @6  v10o5 hf \1
+C @18 v10o4 hf \2
+B r48 [b24>c24<b24>c24d24c24d24|c24<]8 c48< 
+C r48 [e24 f24 e24 f24g24f24g24|f24 ]8 f48 
+B @2 v11o3 \0
+C @9 v12o3 \1
+BC [e48r48e48r48e48r48re48r48re48r48re48r48r24e48r48e48r48e48r48r24<e48r48e48r48e48r48r24>]2
+B @19 v11o2 \0
+C @9  v12o2 \1
+BC [[a+48r48a+48r48a+48r48r]5 a+48r48a+48r48]2
+B v10 @21 o3
+C v8 @21 o4
+BC h1,244,2,1 r6>e1&e1&e2&e&e48r48
+B @10@e10 o2 v13 \0
+C @11@e11 o2 v13 \1
+BC h1,24,0,32 q8
+BC [r48]8 [e%6]8 [e%8]8 [e%10]8 [e%12]8 e16r48e16r48e12&e48r48e12&e48r48e&e48r48e6&e16r48
+BC hf
+
+B @19 v11o2 \0
+C @6@e16 v11o2 \1
+BC [e24&e%2r32 f24&f%2r32 e24&e%2r32 f24&f%2r32 g&g%2r32g24&g%2r32 f24&f%2r32e24&e%2r32f24&f%2r32d&d%2r32]2 
+BC > 
+BC [e24&e%2r32 f24&f%2r32 e24&e%2r32 f24&f%2r32 
+B @2
+BC g&g%2r32 g24&g%2r32
+B @19
+BC f24&f%2r32e24&e%2r32d24&d%2r32f&f%2r32e24&e%2r32d24&d%2r32<a&a%2r32>]2
+B @18 v11o3 \0 
+C @18 v11o4 \1
+BC h16,3,0,4
+B b12>c12<b12>c12d6d12c12<b12>c12<a6b1&b2&b6r2r16r64r%17
+C e12 f12 e12 f12g6g12f12 e12 f12 d6e1&e2&e6r2r16r64r%17
+BC ]0
+
+DE l8 q5 [;L
+D @5 \2 v12
+E @6@e31 \1 v12
+DE h30,3,0,4
+DE o3 c24&c%2r32<a+24&a+%2r32a24&a%2r32>d24&d%2r32c+24&c+%2r32<f+1&f+2&f+4&
+DE f+24&f+%2r32r4r12>c24&c%2r32<a+24&a+%2r32a24&
+DE a%2r32>d24&d%2r32c+24&c+%2r32<f1&f2&f4&f24&f%2r32r4r12
+DE )2 [e24&e%2r32f24&f%2r32 \-7 d+24&d+%2 \1 r32e24&e%2r32f24&f%2r32 \-7 d+24&d+%2 \1 r32e24&e%2r32f24&f%2r32]4
+D @2 v11 o3\0
+E @13 v13 o2\1
+DE q8so
+DE [e48r48e48r48e48r48re48r48re48r48re48r48r24e48r48e48r48e48r48r24<e48r48e48r48e48r48r24>]2
+D @19 v11o3 \0 sf
+E @9  v12o3 \1 sf
+DE [[e48r48e48r48e48r48r]5 e48r48e48r48]2
+D v9  @21 o3 \1
+E v7  @21 o4 \2
+DE h1,244,2,1 r4r12e1&e1&e4&e16r48
+D v14 @22 o2 \1
+E v15 @22 o2 \0 
+DE hf e1&e1&e1&e1&e2&e&e48r48
+DE [
+D @19 v10 o3\0
+E @6 v12 o3\1
+DE [e24&e%2r32]4
+D @23 o2 v12
+E @23 o2 v12 \1
+DE a4
+D @19 v10 o3 \0 
+E @6 v12 o3\1
+DE r24r%2r32
+DE e24&e%2r32e24&e%2r32e24&e%2r32e24&e%2r32 < [e24&e%2r32]4
+DE ]2
+D @5 \2 v12
+E @6 \1 v12
+DE e1&e1&e2&e4&e6&e24&e%2r32r4r12
+DE ]0
+
+F y14,32
+F l8 q8 [ ; L 
+F [
+F h0,16,0,-8 soq1
+F v12 o4 c%2r%14<a+%2r%14a%2r%14>d%2r%14c+%2r%14< ;
+F h0,24,0,32 soq4
+F ( [f+%2r%2]8 [f+%2r%4]8 [f+%2r%6]8 [f+%2r%8]8 [f+%2r%10]8 [f+%2r%14]4 r6 )
+F ]2 
+
+F hf
+F [r24r24r24r24r24r24r24r24]8
+F [r48r48r48r48r48r48r8r48r48r8r48r48r8r48r48r24r48r48r48r48r48r48r24r48r48r48r48r48r48r24]2
+F h1,24,0,-16soq1
+F o4 [[hf r48r48r48r48r48r48r24 ho e%2r%2r16]5 a%2r%2r16 hf]2
+F r6r1r1r2r8r48r48 
+F h1,24,0,32soq4
+F [r48]8 [e%2r%4]8 [e%2r%6]8 [e%2r%8]8 [e%2r%10]8 e%2r%10r48 e%2r%10r48 e%2r%14r48r48 e%2r%14r48r48 e%2r%22r48r48 e%2r%30r16r48
+F hf
+
+F [r24r%2r32r24r%2r32r24r%2r32r24r%2r32r
+F r%2r32r24r%2r32r24r%2r32r24r%2r32r24
+F r%2r32r&r%2r32]2 [r24r%2r32r24r%2r32
+F r24r%2r32r24r%2r32rr%2r32r24r%2r32
+F r24r%2r32r24r%2r32r24r%2r32rr%2r32
+F r24r%2r32r24r%2r32rr%2r32]2
+F r12r12r12r12r6r12r12r12r12r6r1r2r6r2r16r64r%17
+F ]0
+
+G l8 q8 [ ; L 
+G [ 
+G q2 v11@14 o1 c12c12c12c12c12
+G q8
+G (6 [c%4]8 [c%6]8 [c%8]8 [c%10]8 [c%12]8 [c%16]4 r6 )6
+G ]2 
+
+G [r24r24r24r24r24r24r24r24]8 
+G [r48r48r48r48r48r48r8r48r48r8r48r48r8r48r48r24r48r48r48r48r48r48r24r48r48r48r48r48r48r24]2 
+G [[r48r48r48r48r48r48r24c48r16]5 c48r16]2
+G r6r1r1r2r8r48r48
+G (6 [r48]8 [c%6]8 [c%8]8 [c%10]8 [c%12]8 c16r48c16r48c12&c48r48c12&c48r48c&c48r48c6&c16r48 )6
+G hf
+
+G [r24r%2r32r24r%2r32r24r%2r32r24r%2r32r
+G r%2r32r24r%2r32r24r%2r32r24r%2r32r24
+G r%2r32r&r%2r32]2 [r24r%2r32r24r%2r32
+G r24r%2r32r24r%2r32rr%2r32r24r%2r32
+G r24r%2r32r24r%2r32r24r%2r32rr%2r32
+G r24r%2r32r24r%2r32rr%2r32]2
+G r12r12r12r12r6r12r12r12r12r6r1r2r6r2r16r64r%17
+G ]0
+
+@e0={0,0,cfe} ; 129
+@e1={0,0,f8} ; 130
+@e2={0,0,eb=6} ; 131
+@e3={0,0,f8=10} ; 132
+@e4={0,0,ed} ; 133
+
+1 l8 q8 [ ; L
+1 @0 h10,3,0,2 \0
+1 r4r6 v7 o5 g24a+24>c+24g24a+24>c+24e6d+24d24c+6c24<b24a+1&[a+12&((]4 
+1 r12 v8 r4r6<f+24a24>c24f+24a24>c24d+6d24c+24c6<b24a+24a1& [a12&((]5 
+1 v8 e4&e12<a+4&a+12g4&g12 [>e6<a+6g6]2 e2&e6 
+1 v10 [r2r16r48>e12g12a+12>e12g12<<]2 >>
+1 v8 [a+12g12e12c+12]8 
+1 @1 v9 h1,64,4,1
+1 [b6g6a6d6e6<b6>d12e12<a6>]4 [d12e12<a6>(]6 
+1 @2 v8 h16,2,0,2
+1 o5 [e12f12e12f12g6g12f12e12d12f6e12d12<a6>]2 <
+1  e12f12e12f12g6g12f12e12f12d6e1&e2&e6r2r16r64r%17
+1 ]0
+
+2 l8 q8 [ ;L
+2 @0 h10,3,0,2 \0
+2 r4r6 v7 o4 g24a+24>c+24g24a+24>c+24e6d+24d24c+6c24<b24a+1&[a+12&((]4 
+2 r12 v8 r4r6<f+24a24>c24f+24a24>c24d+6d24c+24c6<b24a+24a1& [a12&((]5 
+2 v7 e4&e12<a+4&a+12g4&g12 [>e6<a+6g6]2 e2&e6
+2 v11 @3 h1,72,0,-32
+2 < [e24e24e24re24re24re24r24e24e24e24r24e24e24e24r24]2 
+2 @1 hf v9 
+2 [[g24g24g24r]5 g24g24]2 
+2 @4 v6 h16,2,1,2 >f+2&f+6<b2>e2b4&b12f+2&f+6e2&e6b2&b6>e2&e6b1&b1&b2&b6 
+2 @2 v7 h16,2,1,2 \1 
+2 o5 [e12f12e12f12g6g12f12e12d12f6e12d12<a6>]2
+2 hf <<b1&b1&b2&b6r2r16r64r%17
+2 ]0
+
+3 l8 q8 [ ; L
+3 @4 h8,3,0,2  r4r6 v6 \1 r24 o4 
+3 g24a+24>c+24g24a+24>c+24e6d+24d24c+6c24<b24a+1& [a+12&((]4 
+3 r12 v6r4r6<f+24a24>c24f+24a24>c24d+6d24c+24c6<b24a+24a1&[a12&((]5 
+3 v7 e4&e12<a+4&a+12g4&g12 [>e6<a+6g6]2 e2&e6
+3 v10 >> [r2r16r48e12g12a+12>e12g12<]2 > v6 [a+12g12e12c+12]8 
+3 @2 v7 h1,64,4,1
+3 r24 [b6g6a6d6e6<b6>d12e12<a6>]4  [d12e12<a6>(]6 < 
+3 @2 v7 h16,2,0,2
+3 o5 [e12f12e12f12g6g12f12e12d12f6e12d12<a6>]2 
+3 hf <<b1&b1&b2&b12r2r16r64r%17
+3 ]0
+

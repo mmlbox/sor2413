@@ -1,0 +1,168 @@
+;[gain=1.0;name=so88e040]
+#opll_mode 0
+#tempo 92
+#title { "Combat Scene (Gods in the Heaven)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+123 v10 ; PSG Master Volume
+
+@v15 = {
+;       TL FB
+        21, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+  15, 5, 3, 3, 0, 2, 0, 0, 0, 0, 0 }
+
+@v16 = {
+;       TL FB
+         5, 2,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+  15, 8, 3, 1, 0, 1, 0, 0, 0, 0, 1 }
+
+@v17 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  15, 7, 3, 4, 0, 4, 0, 0, 0, 0, 0 }
+
+;9ABCDEFG !
+
+@e0={0,0,@14fd850}
+
+9A [;L
+9 @13   v12o3
+A @0@e0 v12o3
+9A [c12>c24<<a+12>a+24<a+12g+12>g+24<g12>g24<g24g+48a+48>]4
+9A [
+9A [c12>c24<<a+12>a+24<a+12g+12>g+24<a+12>a+24<a+12>]8
+9A <g12>g24<g12g24>g12<g12>g24<a12>a24<b24>b24c12>c24c24<d12>d24d24<d+12>d+24d+24<c12>c24c24<<g12>g24<g12g24>g12
+9A <g12>g24<a12>a24<b24>b24c12>c24<<b12>b24<b12a+12>a+24<a12>a24<a12f12>f24f24c12f24f24<g12>g24g24d12g24g24c12>c24c24<<a+12>a+24a+24
+9A [<g+12>g+24g+24]2[<f12>f24f24]4
+9A [<g12>g24g24]4[c4&c12r24<g12g12g8>]2
+9A <f12>f24<g12>g24<g12g+12>g+24<a+12>a+24<a+12f12>f24f24<g12>g24g24<g+12>g+24g+24<a+12>a+24a+24
+9A ]2
+9A [c12>c24c24<]4[<a+12>a+24a+24]4[<g+12>g+24g+24]4[<g12>g24g24]2<g12>g24<g12g24a24b24
+9A [>c12>c24c24<<]4[a+12>a+24a+24<]4[g+12>g+24g+24<]7a+12>a+24a+24
+9A ]0
+
+BC [;L
+B @15v11o5 \1
+C @15v11o5 \0
+BC [g2&g12<g12>]3g2&g6
+BC [
+BC h30,3,0,1
+
+B @16v13 \1
+C @16v12 \0 > 
+BC [>c12d+24c12g12f+6&f+24c8d48&d+2&d+48r6c12d+24c12g12f+6&f+24d+8c2&c8r12<]2
+BC g12g24g24b24>c12d6&d24d12g12f6d+24d12d+4&d+8d6d24d+12f6&f24f12d12d+8f8g4&g6g+4f12
+BC d8f8g+12g24f24g4c8d8d+12f4&f12d8d+8f12g2&g6
+C <
+
+B @17v11\1 >
+C @17v11\0 
+BC <<c12c24d12<a+12>c12d+12d12<a+8>c12c24d12<a+12>c12d+12d12g8g24f24d+24f12d+24d12
+BC d+24d24c24d12c24<a+12>g24f24d+24f12a+12>c4&c8
+B <
+BC ]2 
+
+B @16v13 \1
+C @16v13 \0 > 
+BC g6c24d24d+24f24g8>c8d+12d8<a+4&a+12g+8a+12>c4&c12<d+8f8d+12
+BC g2&g12g12>c4&c12d+8g8>c12d12d+24d12c24<a+4g12a+12>d+12f24d+12d24c2&c4
+BC r4r12 
+C <
+BC ]0
+
+*0={v11}
+*1={v0}
+#macro_offset {b=0,h=1}
+
+F y14,32 [;L
+F h1,40,0,-10 soq1 o3
+F [*be12*he24e24*b>e12*he24e24<]7 *b[>e24<]8
+F [
+F [*be12*he24e24*b>e12*h<e24e24]15*be12*he24e24*b>e12e24e24
+F [*b<e12*he24e24*b>e12*h<e24e24>]15*b[e24]8
+F *b
+F [<e12r12e12r12e24>a12f12c12<e24>]2
+F [*b<e12*he24e24*b>e12*he24e24]3
+F *b[e24]8<]2[*be12*he24e24*b>e12*he24e24<]7
+F *be12*he24e24*b>e12e24e24
+F [*b<e12*he24e24*b>e12*he24e24]7 *be24e24e24e24e24r24e24e24
+F ]0
+
+*2={q4}
+*3={q8}
+#macro_offset {b=2,h=3}
+G [;L
+G o1v8@14so
+G [*be12*he24e24*b>e12*he24e24<]7 *b[>e24<]8
+G [
+G [*be12*he24e24*b>e12*h<e24e24]15*be12*he24e24*b>e12e24e24
+G [*b<e12*he24e24*b>e12*h<e24e24>]15*b[e24]8
+G *b
+G [<e12r12e12r12e24>a12f12c12<e24>]2
+G [*b<e12*he24e24*b>e12*he24e24]3
+G *b[e24]8<]2[*be12*he24e24*b>e12*he24e24<]7
+G *be12*he24e24*b>e12e24e24
+G [*b<e12*he24e24*b>e12*he24e24]7 *be24e24e24e24e24r24e24e24
+G ]0
+
+@e9={0,0,fc0=180}
+@e10={0,0,fc}
+@e11={0,0,fc0=180}
+
+123 k4
+
+1 [;L
+1 @9o5 ;v10
+1 d+2&d+6d+2&d+6d+2&d+6d+2&d+6
+1 [
+1 @10
+1 [<<g12>c24<g12>c12c6&c24<g8>c2&c24r6<g12>c24<g12>c12c6&c24c8<g6&g24(>>d48&d+12&d+48c4&c8)]2<
+1 d12d24d24f24g12b6&b24b12>d12c6c24<b12>c4&c8<b6b24>c12d6&d24d12<b12>c8d8d+4&d+6f4
+1 c12<b8>d8f12d+24d24d+4<g+8a+8>c12c4&c12c8c8c12d4c12<b24a24b4g12g24g12g12g12>c12<a+12g8g12g24g12g12g12>c12<a+12>d8
+1 @11
+1 c8d6&d24c8<a+6&a+24@10>c8d12f12g6&g24&a+6
+1 ]2
+1 @10c2&c6<a+2&a+6g+2&g+6g4&g12g6a+6>c2&c6<a+2&a+6g+1g+6a+6
+1 ]0
+
+2 )
+2 [;L
+2 @9o5hf ; v11
+2 d2&d6d2&d6d2&d6d2&d6
+2 h18,3,0,1@p24 (; v10
+2 [
+2 [>c12d+24c12g12f+6&f+24c8d+4&d+8(c24c24c24c24r24<a+8)>c12d+24c12g12f+6&f+24d+8c6&c24(<<b48&>c12&c48<g4&g8)>]2<<
+2 b4&b12b8>c8d12d+6f6g6>c6<g6g24a12b6&b24b12g12g8g8>c4&c6>g+4f12d8f8g+12g24f24g4c8d8
+2 d+12<<g+4&g+12g+8g+8g+12b4g+12g24f24g4d+12d+24d+12d+12d+12g12f12d8d+12d+24d+12d+12d+12g12f12a+8
+2 @11
+2 g+8a+6&a+24g8f6&f24@10g+8a+12>d12d+6&d+24&f6
+2 ]2
+2 @10<g2&g6f2&f6d+2&d+6d4&d12d6f6g2&g6f2&f6d+1d+6f6
+2 ]0
+
+3 [;
+3 @9\1o5 ; v10
+3 d+2&d+6d+2&d+6d+2&d+6d+2&d+6
+3 [
+3 @10
+3 [<<g12>c24<g12>c12c6&c24<g8>c4&c8(>g24g24g24g24r24f8)<<g12>c24<g12>c12c6&c24c8<g6&g24(>>d48&d+12&d+48c4&c8)]2<
+3 d12d24d24f24g12b6&b24b12>d12c6c24<b12>c4&c8<b6b24>c12d6&d24d12<b12>c8d8d+4&d+6f4c12<b8>d8f12d+24d24d+4<g+8a+8>c12c4&c12
+3 c8c8c12d4c12<b24a24b4g12g24g12g12g12>c12<a+12g8g12g24g12g12g12>c12<a+12>d8
+3 @11
+3 c8d6&d24c8<a+6&a+24@10>c8d12f12g6&g24&a+6
+3 ]2
+3 @10c2&c6<a+2&a+6g+2&g+6g4&g12g6a+6>c2&c6<a+2&a+6g+1g+6a+6
+3 ]0
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+;[gain=1.0;name=so88e055]
+#opll_mode 0
+#tempo 89
+#title { "Fanfare" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = { 
+;       TL FB
+        24, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 1, 0, 0,
+  10, 6, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+@e0={0,0,fedc}
+; 9ABC123 !
+9A l8 q8 so
+9 @5@e0 v12 o2 \1
+A @15   v11 o1
+9A f4&f12g4&g12g+2&g+6
+
+BC l8 q8 so
+B @15 v13 o3 h13,2,0,2 \1
+C @15 v13 o3 h13,2,0,2 \0
+B <[b-12&]3b-12>[c12&]3c12 @15 ((g2&g6
+C  [d+12&]3d+12 [f12&]3f12 @15 ((g2&g6
+
+@e1={0,0,efedc0=255}
+
+DE l8 q8 
+D @6@e1 v11 o6 h13,2,0,2 \1
+E @15   v12 o3 h13,2,0,2 \0
+DE g12<a+12>d+12g12 t84 a12 t78 c12 t73 f12 t66 a12r24> c2&c6
+
+@e9={1,0,edca}
+123 k3
+1 l8 q8 @9 v12 o3 [c12&]3c12 [d12&]3d12 d+2&d+6
+2 l8 q8 @9 v12 o3 [a+12&]3a+12> [c12&]3c12r96 f2&f6
+3 l8 q8 @9 v11 \1 o3 [c12&]3&c12 [d12&]3d12 d+2&d+6

@@ -1,0 +1,98 @@
+;[gain=1.0;name=so88e009]
+#opll_mode 0
+#tempo 72
+#title { "Priest Dehytel (The Lost Talisman)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+123 v10 ; PSG Master Volume
+
+@v15 = { ; @0
+;       TL FB
+        36, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 7, 2, 3, 0,10, 0, 0, 0, 0, 0,
+  15, 6, 4, 3, 0, 0, 0, 0, 0, 0, 1 }
+
+;9ABCDEFG12 !
+
+BC q8 
+BC [; L
+B @13 o3 v12
+C @15 o4 v11 \1
+BC [[g24a24a+24]4g24a24a+24>d24<]2 [>c24d+24g24<]4>
+BC c24d+24g24a+24[d24d+24f24]2d24<a24d24>d24r24<d24>d24r24<d24>d24
+BC [[<g24a24a+24>]4 <g24a24a+24>d24]2  
+BC [c24d+24g24]2 a+24g24 [d24d+24f+24]2 d24f+24  [<g24a24a+24>]2 d24<a+24
+BC g24>g24r24<g24>g24r24<g24a24&g+24>g+24<g+24g+24>g+24<g+24>d+24<g+24g+24
+BC >g+24<g+24g+24b24g+24>d+24<g+24g24>g24<g24g24>g24<g24>d24
+BC <g24g24>g24<g24g24a+24g24>d24<g24g+24>g+24<g+24g+24>g+24<g+24>d+24
+BC <g+24a24>a24<a24a24>a24<a24>e24<a24a+24>a+24<a+24
+BC a+24b24>b24<b24b24>c24c24c+24c+24d24>d24<d24<d24
+BC ]0
+
+@e0={0,0,@13.c@3f}
+@e1={0,0,@14.f@6f}
+
+DE q8 [
+D @15 v11 h10,3,0,1 o4 >
+E @13 v9  h10,3,0,1 o4 >
+DE <
+DE d+8d6&d24f8d+6&d+24d+8d6&d24r12d12d+12f12f8d+6&d+24a+8a8d+12
+DE d4&d12f24r12f24r12f24r24
+DE d+8d6&d24f8d+6&d+24d+8d6&d24r12d12d+12f12g8a8a+12a8g8f+24g4&g8
+D @11@e0
+E @12@e1 \1
+DE g24r12g24r12g24g+12r12g+24r12g+24r24g+24r12g+24r12g+24g12
+DE r12g24r12g24
+DE r24g24r12g24r12g24g+12r12g+24r12g+24a12
+DE r12a24r12a24a+12r24a+24
+DE r24b24r24b24r24>c12c+12d6
+DE ]0
+
+@e8={0,0,f0=48}
+
+F y14,32 @8@e8 v12 h1,20,0,-10 so q1 o3
+F [
+F [g24g24>e24r24<g24r24>e24r24<g24r24>e24<g24g24g24>e24r24<g24g24>e24r24<g24r24>e24r24<g24r24>e24<g24g24g24>e24<g24]4
+F [g24g24>e24r24<g24r24>e24r24<g24r24>e24<g24g24g24>e24r24<]4
+F ]0
+
+G q8 v11 o1 @14
+G [
+G [c24c24 c24r24 c24r24 c24r24 c24r24 c24 c24c24c24 c24r24 c24c24 c24r24 c24r24 c24r24 c24r24 c24 c24c24c24 c24 c24]4
+G [c24c24 c24r24 c24r24 c24r24 c24r24 c24 c24c24c24 c24r24]4
+G ]0
+
+@e9={0,0,efe}
+@e10={0,0,e0}
+
+1 q8 (2 @9 h5,3,0,1 
+1 [ o3 ; L
+1 a+12g24a+8g12>d8c8<a+12>c8<a+6&a+24r12a+12>c12d12 c8<a+8>c12d+8f8<a+12a4&a12a24r12a24r12a24r24
+1 a+12g24a+8g12>d8c8<a+12>c8<a+6&a+24r12a+12>c12d12 c8d+8g12f+8d8d24a+24&<a+4&a+12>a+24
+1 r12a+24r12a+24b12r12b24r12b24r24b24r12b24r12b24a+12
+1 r12a+24r12a+24r24a+24r12a+24r12a+24b12r12b24r12b24>c12
+1 r12c24r12c24c+12r24c+24r24d24r24d24r24d+12e12f+6
+1 ]0 
+
+2 q8 (2 \1 [;L
+2 @10 o4
+2 [a+48>d48g48a+48>d48<a+48g48d48<]8
+2 [g48>c48d+48g48>c48<g48d+48c48<]4
+2 [a48>d48f48a48>d48<a48f48d48<]4
+2 [a+48>d48g48a+48>d48<a+48g48d48<]8
+2 [g48>c48d+48g48>c48<g48d+48c48<]2
+2 [a48>d48f+48a48>d48<a48f+48d48<]2
+2 [a+48>d48g48a+48>d48<a+48g48d48<]4
+2 @9 >
+2 d+24r12d+24r12d+24r24d+24r12d+24r12d+24d12r12d24
+2 r12d24r24d24r12d24r12d24d+12r12d+24r12d+24e12r12e24
+2 r12e24f12r24f24r24f+24r24f+24r24g12g+12a6
+2 ]0
+
+@e11={0,20,fc0=24}
+
+3 l8 ( q8 \-1 @11 h0,25,0,-10 o2 n10
+3 [;L
+3 [/1gg)/3g12(]3 /1g12)/3g24n0g24n10(/1g12)/3g24n0g24n10([/1cc)/3c12(]2 
+3 /1dd)/3d12(/1d24)/3n10c48c48c48c48(/1d24)/3n5c48c48c48c48(/1d24)/3n15c24(n10
+3 ]0

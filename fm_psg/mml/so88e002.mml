@@ -1,0 +1,138 @@
+;[gain=1.0;name=so88e002]
+#opll_mode 0
+#tempo 113 ; 113.55
+#title { "Town -Pentawa I-" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+  14, 6, 3, 3, 0, 2, 0, 0, 0, 0, 0 }
+
+@e1={0,0,@11.0.@3f}
+@e2={0,0,@10f@14d90}
+
+;9ABCDE !
+
+9A l8 q8 [ ;L 
+9 @13 v12
+A @14@e2 v12 \0
+9A [[o3 dd16e16rf16rg16r16d16&]3 dd16e16rf16rg16r16<g16& 
+9A [gg16a16ra+16r>c16r16<g16&]2 gg16a16ra+16>g16<a+16>a16
+9A r16<g6&g48a16ra+16r>c4]2 
+
+9 @15 v12 q8 >
+A @15 v12 q8 \1 >> 
+9A g4&gg
+9A d16ef6&f48g6&g48d6&d48e4g4&gg
+9A ab12&b%2>c+32d6&d48<ba16rb6&b48a32g+32
+9A g4&ggd16ef6&f48g6&g48d6&d48e4
+9A g4&ggab12&b%2>c+32d6&d48<b>e4&
+9A e6&e48 
+9 <
+A <<
+
+9 @11@e1 h30,4,0,2 v12
+A @6 h30,4,0,2 v9
+9A r2r16 e32g32a32b32>e32f+32b2&
+9A be16g1&g6&g48r4rr4rb16>c16d16b16a+16
+9A a2&a16r [f+64&g12&g%5f+16r16]3 a2&
+9A a4&a16&g+64(g64(f+64(f64
+9A hf
+9A ]0
+
+@e0={0,0,@6e0=242}
+
+BC l8 q8 [ ;L 
+B @15 v12
+C @15 v12 \1
+BC so
+BC [o5 c2&c6&c48c4&c6&c48c16
+BC d16c16dc4&cd32d+32ec16rd16r<b16r>c16
+BC r6r48<ag4&g6&g48de16g16r16>c16r<a+16r
+BC a16ra+16r>g4&g6&g48gd16ef6&f48e16
+BC rd16rd4]2 (
+BC sf
+B @2
+C @7@e0
+BC r64<c2&c4c4&c6&c48
+BC r16c4<b2&b4b4&b6&b48r16b4>c2&c4
+BC c4&c6&c48r16c4<b2&b4b4&b6&b48r16
+BC b6&b%13 
+B @15 >
+C @15 >>
+BC )b2&b4b>cdedc<b4>c16<a16
+BC b4&b16a32g+32g4&ge16f+16g16a16a+16b2&
+BC b4&b16b>cdedc<b4>c16<a16b4&b16a32g+32
+BC g2&g4
+B <
+C <<
+BC ]0
+
+DE l8 q8 [;L 
+D @15 v12
+E @15 v12 
+DE [ o3
+D > 
+E >> \1
+DE a2&a6&a48a4&a6&a48aa16
+DE ra2&a4a4&a6&a48aa16rg2&g4
+DE g4&g6&g48gg16rg2&g4>d6&d48c16r<a+16
+DE ra+4]2 (
+D <  
+E << 
+D @2 v12
+E @7@e0 v12
+DE f2&f4f4&f6&f48r16f4
+DE e2&e4e4&e6&e48r16e4f2&f4f4&f6&
+DE f48r16f4e2&e4e4&e6&e48r16e4 
+D @13    v12 
+E @14@e2 v12
+DE <
+DE [aa16b16r>c16rd<a16&]4 [aa16b16r>c16rd<a16&]3 aa16b16r>c16rd<a16
+DE >
+DE ]0
+
+@e9={1,0,edb0=192}
+
+1 l8 q8 [;L 
+1 @9 v11 [ o4
+1 [f2&f6&f48f4&f6&f48ff16rf16&]3 f2&f6&f48a+6&a+48a16ra16ra4
+1 ]2 
+1 r64 
+1 [d2&d4d4&d6&d48r16d4]3 d2&d4d4&d6&d48r16d6&d%13
+1 g2&g4 [g]6 g4g16g16g4&gg4&g<b16>c16c+16d16d+16
+1 e2&e4&e16 [g]6 g4g16g16g4&gg2&g4
+1 ]0
+
+2 l8 q8 [;L
+2 @9 v11 [ o4 
+2 [d2&d6&d48d4&d6&d48dd16rd16&]3 d2&d6&d48g6&g48g16rg16rg4
+2 ]2 
+2 <g+2&g+4g+4&g+6&g+48r16g+4g2&g4
+2 g4&g6&g48r16g4g+2&g+4g+4&g+6&g+48r16
+2 g+4g2&g4g4&g6&g48r16g4>
+2 e2&e4 [e]6 e4e16e16e4&ee4&e<g16a16a+16b16>c16
+2 c2&c4&c16 [e]6 e4e16e16e4&ee2&e4
+2 ]0
+
+@e12={2,0,ea0=48}
+@e13={2,6,ea0=20}
+
+3 l8 q8 [;L
+3 v10 o2 [
+3 [@12 c16r16c16 @13 c6&c48]7 
+3 @12 c16r @13 c @12 ))c6&c48((c16 
+3 @13 c6&c48 
+3 [@12 c16r16c16 @13 c6&c48]4 
+3 @12 c16r16c16 @13 c @12 c16rc16 @13 cc6&c48c16 
+3 @12 c16 @13 n4 c16 @13 n10 c16
+3 ]2 
+3 @9 \1 o3
+3 g+2&g+4g+4&g+6&g+48r16g+4g2&g4g4&g6&g48r16g4 
+3 g+2&g+4g+4&g+6&g+48r16g+4g2&g4g4&g6&g48 \0
+3 @13 n0 )c16c16c16c16c16)c6&c48(@13 n10 c6&c48 
+3 [@12 c16r16c16 @13 n10 c6&c48]7 @13 n10 )@12 c6&c48(@13 n10 c6&c48 
+3 [@12 c16r16c16 @13 n10 c6&c48]7 @13 n10 
+3 ]0

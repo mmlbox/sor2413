@@ -1,0 +1,202 @@
+;[gain=1.0;name=so88e032]
+#opll_mode 0
+#tempo 89
+#title { "Dungeon (The Dark Mage)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+123 v10 ; PSG Master Volume
+
+@v15 = {
+;       TL FB
+         0, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  15, 6, 5, 4, 0, 0, 0, 1, 0, 0, 0 }
+
+@v16 = {
+;       TL FB
+        22, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  12, 4, 1, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+
+@v17 = { ; Dist.G slot 3,4
+;       TL FB
+        27, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  12, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+  12, 0, 0,11, 0, 1, 0, 0, 1, 0, 0 }
+
+;9ABCDEFG !
+
+BC q8
+B @15h1,30,0,-10 v10 o6
+C @15h1,30,0,-10 v10 o6 
+BC r48c24c24c24<g24g24g24e24e24e24e96e32r16 hf
+
+BC [;L
+B @16 \1 o4 
+C @16 \0 o4
+BC g2c24d24f24g24f24d24>c24<a+24g24>d24c24<a+24
+BC [>c+24d24d24<]4
+BC >c24d24f24d24c24<a+24>c24<a+24g24f12g1&g4&g8r8
+BC >d8d24d24d24d24c12d24
+BC r8r24<g12g24g24f24d24g24g24g24g24f24
+BC d24g24f24d24a+24a24g24>c12
+BC <a+12a24g24g+96&a12&a32f12d6c12d2
+BC g8g24g24f24d24>c12<a+12a24g24>d12d+12f12c+96&d16&d96c12<
+BC a+12d+4g12a12a+12>c12<a+12a12>f12
+BC d+12d24c24c+96&d2&d4&d32r12
+BC <f12g4&g24g12f12d12[g24f24d24]2g12a12g12>c12<a+12a12g12
+BC a12a+12a+8a12f8>c+96&d12&d32c24<a+4a+12a12g12a+4a+12a12a+12
+BC >c4<g12a12a+12a+8a8a+8>c8d2c4d12d+12f12d4&d8c12c2&c24
+BC d2c4d12d+12d12c4c12<a+12g12>c2d12c12<a+12>c12<g12>c4&c6&
+BC c24<d+48f48g48a48a+48>c48d12c12<a+12>c12d12c12<a12a12a12a12a+12>c12<a+1
+
+@e0={0,0,@13f@3fc=160}
+@e1={0,0,@17f} ; {0,0,@14c@6f}
+
+B @0@e0 h40,3,0,2 \0
+C @1@e1 h40,3,0,2 \1
+BC ) <
+BC g2&g4a+24a24a+24>c24<a24f24g2&g4g24a24a+24>c24d24f24
+BC g2&g4>d24c24f24d+24a24g24>c24<a+24a24g24a12d24c24<a+24a24g24a24a+4^16&a+_<a+8.
+BC g2a4&a6g24a24a+4&a+6a24a+24>c4&c6<a+24>c24d2g4&g6d24g24a4&a6g24
+BC a24a+24g24d24a24g24d24a+24g24d24a24a+24>c24c4&c8e24g24a+24>c+4<a+24a24g24a24a+24
+BC g24a12g12f+12d12<a12g12f+8&f+_c8
+BC (
+B @16 \1 hf
+C @16 \0 hf
+BC d24d24d24f24f24f24
+BC ]0
+
+@e2={0,0,@13f}
+@e3={0,0,@5fc0=192}
+DE l24r2[;L
+D @2@e2v12o2
+E @3@e3v12o2 \1
+DE [g24]12a+24a+24a+24>c24c24c24d24d24d24f24f24
+DE f24
+DE [c+24d24d24]4c24d24f24d24c24<a+24>c24<a+24g24f12g8g24g24g24
+DE g24a+12
+DE >c8<g8g24g24g24g24>g24f24d24c24d24<a+24g8g24g24g24
+DE a+12
+DE >c8d8d24d24d24d24c12d12r8[[<g24>]6c24c24c24<a+24a+24
+DE a+24
+DE >]3<g24g24g24a+24a+24>c24d24d24d24f24f24f24[[<g24>]6
+DE c24c24c24<a+24a+24a+24>]2[<d+24>]12[<f24>]6[<a24>]3[c24
+DE ]3[<g24
+DE >]6<a+24a+24a+24>c24c24c24[d24]7r12<f12g24g24g24
+DE g24>g24g24g24f24f24f24d24d24d24
+DE <d+24d+24d+24>d+24d+24d+24f24
+DE f24f24g24g24g24c24c24c24d+24d+24d+24g24g24g24a+24a+24a+24
+DE d24
+DE d24d24f24f24f24a24a24a24>c24c24c24<<g24g24g24>g24g24g24f24
+DE f24f24d24d24d24
+DE <d+24d+24d+24>d+24d+24d+24f24f24f24g24g24g24
+DE c24c24c24d+24d+24d+24g24g24g24a+24a+24a+24
+DE d24d24d24f+24f+24f+24
+DE a24a24a24>c24c24c24[<<g24>>]6<c24c24d24d24f24f24[<g24>]6
+DE c24<a+24g24a+24
+DE >c24d24<f24f24f24a24a24a24>c24c24c24d24d24
+DE d24f24f24f24d24d24d24c24<a24f24>c24
+DE <a24f24g24g24g24>g24<
+DE g24g24>c24c24d24d24f24f24[<g24>]6c24<a+24g24a+24>c24d24[<e24>]6<g24g24
+DE g24>c24c24c24e24e24e24g24g24g24a+24g24a+24>c24
+DE <g24>c24<<d+24d+24d+24g24g24g24a+24a+24
+DE a+24>c24c24c24<f24
+DE f24f24a24a24a24>c24c24c24d24d24d24<d+24d+24d+24g24g24g24a+24
+DE a+24
+DE a+24>c24c24c24<f12f12f12a12a12>c12[<g24>]6c24c24c24<
+DE a+24a+24a+24g24
+DE g24g24a+24a+24a+24>c24c24c24d24d24d24
+DE [[<g12g12g24g24>]8[d+12d+12d+24d+24]8]2
+DE [c24]12[c+24]12[d24]24
+DE ]0
+
+@e4={0,0,f0=72}
+
+F y14,32
+F @4@e4v12o5 soq1 h1,30,0,-10
+G @14v8o1
+FG c24c24c24<g24g24g24e24e24e24)e96e32r12
+FG [;L
+FG [<e24r24e24>e24r24<e24>]6 e24r24e24a24e24c24
+FG <e48e48e24e24>e24r24<e24r12e24>a8g12a8<e24r12e24>a48a48e24c24
+FG g24e24c24g24e24c24<e24r24e24>a48a48e24c24g12a8<e24r12e24>a24e24c24
+FG e12e24r6[<e24r24e24>e24r24<e24>]18[e24]7r12a12e24
+FG [<e24r24e24>e24r24<e24e24e24r24>e24r24<e24>]3
+FG  <e24r24e24>e24r24<e24>a24c24<e24>a24c24<e24
+FG [e24r24e24>e24r24<e24e24e24r24>e24r24<e24]3
+FG [>e96e32<a24a24]4[e24r24e24>e24r24<e24]7
+FG e24r24e24>e24e24e24[<e24r24e24>e24r24<e24>]7
+FG e48e48e24e24e24e24e24
+FG [<e24r24e24>e24r24<e24>]6
+FG [a12]3a12c12<e12
+FG [e24r24e24>e24r24<e24]2>a24e24<a24>a24a24a24e24e24e24<a24a24a24
+FG [ [e12e12e24e24]3[>e24<]6 ]8
+FG [e24r24e24>e24r24<e24e24r24e24>e24e24e24<]3
+FG e24r24e24>e24r24<e24>[e24]6
+FG ]0
+
+@e9={1,0,fdc}
+@e10={1,0,fc}
+@e11={1,0,fc0=230}
+
+123 k4 (1
+
+1 r2
+1 [;L
+1 @9o4
+1 g2g24a24>c24d24c24<a24>g24f24d24a24g24f24
+1 [g+24a24a24]4g24a24>c24<a24g24f24g24f24d24
+1 c12d1&d4&d8r8<a8a24a24a24a24g12a24r6
+1 @10>
+1 g4f4e4c4 [<a48r48>]6<a12a+12>c12[d24c24<a+24>]2
+1 a24r24a24r12g4&g24f4e4c4<g4a+12>c12d12f4a4a12g2&g6&g24r12a12a+6&a+24
+1 r12d6r12a+6r12g6r12g6r12g12a12a+12a6r12d24r12f24r12a+6r12d6r12a+6r12g6r12g6
+1 r12g12g12g12g8f+8g8a8
+1 @11
+1 a2a4a+12>c12d12<a4&a8a12a6(a24a24a24a+24a24a+24>c24<a+24g24)a2a4a+12>c12<a+12<g4a+4>c4g4
+1 @10 
+1 g12g12
+1 g12g12g12f2&f12[g12]6[f12]6 g1
+1 [[<a12a12a24a24>]2[<a+12a+12a+24a+24>]2]8[<g6&g24>g4&g24]2f+12e12d12<a12g12
+1 f+12d4a24a24a24>c24c24c24
+1 ]0
+
+2 r2
+2 [;L
+2 @9o5\1
+2 d2g24a24>c24d24c24<a24>g24f24d24a24g24f24
+2 [c+24d24d24]4c24d24f24d24c24<a+24>c24<a+24g24
+2 f12g1&g4&g8r8d8d24d24d24d24c12d24r6
+2 @10
+2 d4d4c4<g4 [>d48r48<]6>d12d+12f12 [<a24g24f24>]2e24r24e24r12d4&d24d4c4<g4a+4
+2 >d+12f12g12a4>c4c12<a+2&a+6&a+24r12c12d6&d24r12<g6r12>d+6r12<a+6r12>c6
+2 r12c12d12d+12d6r12<a24r12>c24r12d6r12<g6r12>d+6r12<a+6r12>c6r12c12c12c12c8c8c8c8
+2 @11
+2 a+2a4a+12>c12d12<f4&f8f12f6(d24d24d24d+24d24d+24f24d+24c24)a+2a4a+12>c12<a+12<e4g4a+4>e4
+2 @10
+2 d+12d+12d+12d+12d+12d+2&d+12[d+12]6[c12]6 d1
+2 [<d12d12d24d24>]32[<e6&e24>e4&e24]2[<d24a24>d24]6<f24f24f24a24a24a24
+2 ]0
+
+3 r2
+3 [;L
+3 @9o4\1
+3 g2g24a24>c24d24c24<a24>g24f24d24a24g24f24
+3 [g+24a24a24]4g24a24>c24<a24g24f24g24f24d24
+3 c12d1&d4&d8r8<a8a24a24a24a24g12a24r6
+3 @10
+3 >g4f4e4c4[<a48r48>]6<a12a+12>c12[d24c24<a+24>]2a24r24a24r12g4&g24f4e4c4<g4
+3 a+12>c12d12f4a4a12g2&g6&g24r12a12a+6&a+24r12d6r12a+6r12g6r12g6r12
+3 g12a12a+12a6r12d24r12f24r12a+6r12d6r12a+6r12g6r12g6r12g12g12g12g8f+8g8a8
+3 @11
+3 a2r2a4&a8a12a6(a24a24a24a+24a24a+24>c24<a+24g24)a2r2<g4a+4>c4g4
+3 @10
+3 g12g12g12g12g12f2&f12[g12]6[f12]6 g1
+3 [[<a12a12a24a24>]2[<a+12a+12a+24a+24>]2]8
+3 [<g6&g24>g4&g24]2f+12e12d12<a12g12f+12d4a24a24a24>c24c24c24
+3 ]0
+

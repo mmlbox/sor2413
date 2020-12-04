@@ -1,0 +1,107 @@
+;[gain=1.0;name=so88e034]
+#opll_mode 0
+#lfo_mode 0
+#tempo 96
+#title { "Dungeon II (The Dark Mage)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = { ; Bass
+;       TL FB
+        17, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 6, 5, 0, 0, 0, 0, 0, 0, 0, 0,
+  15,15, 0,15, 0, 0, 0, 0, 1, 0, 0 }
+  
+@v16 = { 
+;       TL FB
+        13, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0,
+  15, 6,15,10, 0,14, 0, 0, 1, 0, 1 }
+
+@v17 = { ; Synth
+;       TL FB
+        20, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  11, 6, 5, 1, 0, 5, 0, 0, 0, 0, 1,
+   7, 4, 0, 5, 0, 1, 0, 0, 1, 0, 0 }
+
+@e3={0,0,y2,20fy2,16fy2,20f:2y2,24f:2y2,28f:2y2,24f:2y2,20}
+
+9A l8 q8 [;L
+9A r2r16r64r2r16r64r6r%2 
+9 @2  v11 o5
+A @11 v11 o5 >> \1 
+9A h8,4,0,2
+9A c2&c6<b2&b6>e2&e6d4&d12g1r2r16r64r%17
+9A [>e12d12c12d12r12g12r12e12r12c12r12d12r12<b4]2 
+9A [>f12e12d12e12r12g12r12f12r12e12r12f12r12d4<]2 >
+9A r12e12g+12b12>d12<b12g+12e12d12<b12g+12e12d12<b12g+12e4 
+A <<
+9A @16
+9A (>c12r12<a12r12b12r12>c12<a12b12>c12<a12b12>c12<a12b24>c24<b24a24b6)
+9 @17@e3
+A @6 >
+9A >e24f24e24d24e2&e24d24<b24>d24<b24a24f24a24f24e24f24d24<b24>d24f24a24b24>d24f24a24b1&b2
+9A ]0
+
+BC l8 q8 [;L 
+B v12 @15 o3
+C v8  @15 o3 \-1
+BC q7so
+BC [a24a24a12a12a12<a24a24>a12a12a12]12 
+BC [d24d24d12>d12d12<d24d24>d12d12d12<]4
+BC q8sf
+B @5 v12 o2
+C @6 v13 o2 \-1
+BC >e2&e6<e2&e4&e12f6d6e6f12d12e12f12d12e12f12d12e1&e1&e1&e4&e12
+BC ]0
+
+DE l8 q8 [;L
+DE r12
+DE r2r16r64r2r16r64r6r%2 
+D @2  v8 o5 \-1
+E @11 v8 o5 \0 >>
+DE h8,4,0,2
+DE c2&c6<b2&b6>e2&e6d4&d12g1r2r16r64r%17 
+DE [>e12d12c12d12r12g12r12e12r12c12r12d12r12<b4]2 
+DE >f12e12d12e12r12g12r12f12r12e12r12f12r12d4f12
+DE e12d12e12r12g12r12f12r12e12r12f12r12d6 
+E <<
+DE hf 
+D @9  v12
+E @10 v10
+DE o2 e1&e2f6d6e6f12d12e12f12d12e12f12d12e1&e1&e1&e4&e12
+DE ]0
+
+@e9={0,0,ea0=160}
+@e10={0,0,f}
+
+123 v12
+
+1 l8 q8 @9 k3 r%2 [;L 
+1 r2r16r64r2r16r64r6 
+1 o4 e2&e6d2&d6c2&c6<b4&b12>d1r2r16r64r%17 
+1 (2 [>c12<b12a12b12r12>d12r12c12r12<a12r12b12r12g4]2 
+1 [a12g12f12g12r12a+12r12a12r12g12r12a12r12f4]2 
+1 @10 (2 b1&b2>c6<a6b6>c12<a12b12>c12<a12b12>c12<a12b24>c24<b24
+1 a24b1&b1&b1&b6 
+1 @9 b%2 )4
+1 ]0
+
+2 l8 q8 \1 @9 k3 r%2 [;L 
+2 r2r16r64r2r16r64r6 
+2 o4 e2&e6d2&d6c2&c6<b4&b12>d1r2r16r64r%17 
+2 (3 o7 [c12<b12a12b12r12>d12r12c12r12<a12r12b12r12g4>]2 < 
+2 [a12g12f12g12r12a+12r12a12r12g12r12a12r12f4]2 
+2 @10 ( o4 b1&b2>c6<a6b6>c12<a12b12>c12<a12b12>c12<a12b24>c24<b24a24b1&b1&b1&b6 
+2 @9 b%2 )4
+2 ]0
+
+3 l8 q8 \1 @9 k3 r%2 [;L 
+3 r2r16r64r2r16r64r6 
+3 o4 a2&a6g2&g6a2&a6g4&g12b1r2r16r64r%17 
+3 (2 [>c12<b12a12b12r12>d12r12c12r12<a12r12b12r12g4]2 
+3 [a12g12f12g12r12a+12r12a12r12g12r12a12r12f4]2 
+3 @10 (2 e1&e2f6d6e6f12d12e12f12d12e12f12d12e24f24e24d24e1&e1&e1&e6 
+3 @9 e%2 )4
+3 ]0

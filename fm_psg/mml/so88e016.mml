@@ -1,0 +1,174 @@
+;[gain=1.0;name=so88e016]
+#opll_mode 0
+#lfo_mode 0
+#tempo 103
+#title { "Rwan and Gold Dragon (The Cursed Oasis)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = { ; Gyaaan
+;       TL FB
+         0, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+   2, 1, 5, 2, 0, 3, 0, 0, 0, 0, 0,
+  14, 1, 2, 1, 0, 1, 0, 0, 0, 0, 1 }
+
+@v16 = { ; 
+;       TL FB
+         3, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  15, 5, 2, 7, 0, 4, 0, 0, 1, 0, 0 }
+
+@v17 = { ; Guitar
+;       TL FB
+         8, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,12, 1, 0, 0, 3, 0, 0, 1, 0, 0,
+  14, 7, 1, 0, 0, 1, 0, 1, 0, 0, 0 }
+
+;BC123 !
+@e4={0,0,@5d@6e}
+
+9A l8 q8 
+9 v11 @15 h20,3,0,2 o2 \6 
+A v12 @15 h20,3,0,2 o1 \5
+9A c1&c2&c4&c6&c16 r48 \0
+9A [;L
+9 @16   v11 o3
+A @6@e4 v11 o2 \1 
+9 [e4&e6&e16r48b4&b6&b16r48e4&e6&e16r48d4&d6&d16r48]2 
+A [b4&b6&b16r48>f+4&f+6&f+16<r48b4&b6&b16r48a4&a6&a16r48]2 
+
+9A [ 
+9 @16   v11 o3
+A @6@e4 v11 o2 >> \1
+9 [e24r48e24r48r16f12&f48r48f24r48f24r48r16g24r48g24r48r16f12&f48r48g24r48f12&f48r48]2 
+A [b24r48b24r48r16>c12&c48r48c24r48c24r48r16d24r48d24r48r16c12&c48r48d24r48c12&c48r48<]2 
+9 e2&e4&e6&e16r48f4&f6&f16r48f24r48f24r48r16f24r48r16f24r48f12&f48r48
+A b2&b4&b6&b16r48>c4&c6&c16r48c24r48c24r48r16c24r48r16c24r48c12&c48r48<
+9A ]2
+
+9 @17 o5 v12
+A @9  o5 v9 
+9A [b32>d32<b32a32]4 
+9A b32a32f32e32f32e32d32<b32>d32<b32a32f32a32f32
+9A e32d32e32f32e32g32e32g+32a32b32>e32d32<b32>b32a32f32e32d32 
+9A [<b32a32b32>d32]2 <b32a32f32e32f32e32d32<b32
+9A f32a32b32>c32f32a32b32>c32d32c32<b32a32>c32b32a32f32
+9A >e32d32g32f32e32f32d32e32<b32>c32<a32b32>c32<b32>c32<a32 
+9A [b32e32b32e32>c32<e32a32e32]3 b32>d32d+32e32g32a32a+32b32
+9A ]0
+
+@e0={0,0,0f=16c=200.8=200}
+@e1={0,0,f}
+@e2={0,0,@14f0=4}
+
+BC l8 q8 
+B v12 @7@e0 \0  o6 
+C v12 @7@e0 \-2 o5
+B r4 e2&<b32&>e32&<b32&>e32& h16,3,0,6 <b1&b 
+C r4 b2& f+32&b32& f+32&b32& h16,3,0,6  f+1&f+>
+BC [;L 
+B @13@e1v12 hf o3
+C @10@e2v11 hf o3
+BC [[e16]16 [f16]16]2 
+BC [[<e16>e16]24 [<f16>f16]8]2 < 
+BC [e16]12 > d16d16d+16d+16 [e16]16 
+BC [f16]16 [e16]16
+BC ]0
+
+@e30={0,0,@14fd953}
+
+*0={r}
+*1={@11e} ;SD
+#macro_offset {b=0,s=1,h=0,q=0}
+
+@e3={0,0,@4f@7f8=192}
+
+D h1,32,0,-32
+D l32 q8 @3@e3 \1 v12 h1,122,3,3 r8o4 c1&c2&c4 
+D @11@e30 v12 o4 \1 *s*s*s*s 
+D [;L 
+D l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
+D r8 ;))>g32c32<a32e32(( 
+D [l16*bl32*h*hl16*sl32*h*h]31 
+D r4; > [a32]4 [c32]4 <
+D [l16*bl32*h*hl16*sl32*h*h]15 
+D r4; [e32]8 
+D ]0
+
+@e31={0,0,@10f@12d852}
+*2={@12e} ;SD
+#macro_offset {b=0,s=2,h=0,q=0}
+
+E h1,32,0,-32
+E l32 q8 @3@e3 \0 v12 h1,122,3,3 r8o4 c1&c2&c4 
+E @12@e31 v12 o4 \0 *s*s*s*s 
+E [;L 
+E l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
+E r8; @9 ))>g32c32<a32e32(( 
+E [l16*bl32*h*hl16*sl32*h*h]31 
+E r4; @10 > [a32]4 [c32]4 <
+E [l16*bl32*h*hl16*sl32*h*h]15 
+E r4; @10 [e32]8 
+E ]0
+
+*3={so e sf} ;BD1
+#macro_offset {b=3,s=0,h=0}
+F y14,32
+F l32 q8 r8 o2 q3 r1r2r4 
+F h1,32,0,-24 v13 o3 *s*s*s*s 
+F [;L 
+F hoso q4
+F l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
+F >soq3>g32c32<a32e32q4sf<
+F [l16*bl32*h*hl16*sl32*h*h]31
+F )soq1>[a32]4[c32]4<q4sf(
+F [l16*bl32*h*hl16*sl32*h*h]15
+F )hfsfq8[e32]8(
+F ]0
+
+*4={q8(4c)4} ; BD noise
+*5={soq4csf} ;SD
+*6={q8(2c)2} ;HH
+#macro_offset {b=4,s=5,h=6,q=0}
+
+G l32 q8 r8 o1 r1r2r4 
+G v13@14 *s*s*s*s
+G [;L 
+G l16 [*b*h*sr*b*b*s*b*h*b*s*h*b*b*s*b]3 *b*h*sr*b*b*s*b*h*b*s*h*b*b
+G c32c32c32c32
+G [l16*bl32*h*hl16*sl32*h*h]31 
+G [c32]4[c32]4
+G [l16*bl32*h*hl16*sl32*h*h]15 
+G [c32]8
+G ]0
+
+@e9={1,0,f}
+@e10={1,0,8acdfffe}
+@e11={1,0,fdc}
+@e12={1,0,fdc0=190}
+@e13={1,0,789abcdef}
+
+123 v10
+
+1 l8 q8 @9 o3 [c_<<c>>c_<<c>>(]8 
+1 [;L 
+1 h16,5,0,3@p32 @10 v9 o5 [e2b2e2d2]2 hf )
+1 < [[@11 g+16g+16r16aa16a16r16b16b16r16ab16a]2 g+1a2a16a16r16a16r16b16>c<]2 
+1 @11 >b1e1<b1b1
+1 ]0
+
+2 l8 q8 @9 o3 [c_<c>c_<c>(]8 )8 hf )2
+2 [; L
+2 @12 o3 \1 [ [b16b16r16b16r16b16b16r16]2 > [c16c16r16c16r16c16c16r16]2 < ]2 > 
+2 @11 (2 [[g+16g+16r16aa16a16r16b16b16r16ab16a]2 g+1a2a16a16r16a16r16b16>c<]2 
+2 @11 >b1e1<b1b1 )2
+2 ]0
+
+3 l8 q8 @13 h0,122,1,2 ( o6 [a8r16(]3 h0,122,1,-2 [a8r16(]3 h0,122,1,2 >c8r16d8r16d+8r16e8r16f8 hf 
+3 )6 )3
+3 [;L 
+3 @12 o3 [[e16e16r16e16r16e16e16r16]2 [f16f16r16f16r16f16f16r16]2 ]2 
+3 @11 (2 [[g+16g+16r16aa16a16r16b16b16r16ab16a]2 g+1a2a16a16r16a16r16b16>c<]2 
+3 @11 >>e1<b1a1e1 )2
+3 ]0

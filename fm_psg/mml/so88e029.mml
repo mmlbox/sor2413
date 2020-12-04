@@ -1,0 +1,212 @@
+;[gain=1.0;name=so88e029]
+#opll_mode 0
+#tempo 106
+#title { "Forest (The Riddle of the Ruby)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = {
+;       TL FB
+        28, 2,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 6, 1, 2, 0, 5, 0, 0, 0, 0, 0,
+  15, 4, 2, 2, 0, 3, 0, 0, 0, 0, 0 }
+
+@v16 = {
+;       TL FB
+         0, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10,15,10, 0, 2, 0, 0, 0, 0, 0,
+  15, 7, 6, 5, 0, 2, 0, 0, 0, 0, 0 }
+
+@v17 = {
+;       TL FB
+        55, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   5, 1, 1, 1, 0, 4, 0, 0, 0, 1, 0,
+   5, 4, 1, 1, 0, 2, 0, 0, 0, 0, 0 }
+
+@v18 = {
+;       TL FB
+        34, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 2, 2, 3, 0, 3, 0, 0, 1, 0, 0,
+  14, 5, 2, 2, 0, 1, 0, 0, 0, 0, 1 }
+
+@v19 = {
+;       TL FB
+        12, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 3, 1, 0, 0, 1, 0, 0, 0, 0, 0,
+  12, 0, 0, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+;9ABCDEFGH !
+
+9A q8[;L
+9A [
+
+9 v10@15h40,4,0,1o6
+A v11@11h40,4,0,1o6 < \1
+9A d12e12e12d12e4&e6d12e12d12e12g12b12>d12c+4&c+12<a4&a12a2b6>c4&c12<g4&g12f+4&f+12g6a6
+9A b2a12g12>d8c+8c12<b8g8b12d12e12e12d12e4&e6d12e12d12e12g12b12>d12
+9A c+4&c+12<a4&a12a2b6>c4&c12<g4&g12f+4&f+12g6a6g2&g12r12g12r12
+A >
+
+9A @16 [<<<c12r12>>>]3
+9A @17)<
+9A a12b12b12a12b2g6a6b6b12>d12d12c12
+9A c12<b12b12a12a12g12g12f+12f+12g12g12b12a12b12b12
+9A a12b4&b12a6a6b6>c6e4d4&d6r6<b6>c6d6
+9A @18)
+9A d12c12c12<b12
+9A b12a12a12g12g12f+12f+12e12d12e12f+12a12
+9A b12a12a12g12g12f+12g12
+9A b12f+12e12d+12e6
+9A e12d12<b12>c12b12b12a12a12g12g12f+12
+9A f+12e12
+9A e12d12d12e12f+12a12g2
+9A d12e12g12r12<a6b6>c6
+9A >]2
+9 @6  v9 \0 >
+A @19 v9 \1
+9A d4&d12b8a8b12a8g8a12g8f+8<b12>c4&c12e2f+6g6e6a4&a12
+9A f+8g8a12g8f+8g12f+8e8f+12e12f+24e24d2&d6d6c+6c6<b4&b12>b4&b12
+9A f+4&f+12f+8g8a12a4b24a24g4&g12r6e6f+6g6e2f+12g12e2f+12g12a2&a6b4&b12a4&a12
+9 <
+9A ]0
+
+@e6={0,0,f0=80}
+
+F y14,32soq1 @7@e6
+FG [;L
+F [v12 h0,25,0,-8o4
+G [v8o1@14
+FG [c24r8>e24r12<c24c24r24c24r24>e24r8<]3
+FG c24r8>e24r12<c24c24r24c24r24>e24r12<c24
+FG [c24r8>e24r12<c24c24r24c24r24>e24r8<]3
+FG c24r8>e24r12<c24c24r24c24r24>e24e24e24e24
+FG [<c24r8>e24r12<c24c24r24c24r24>e24r8]4
+FG [<c24r8>e24r12<c24c24r24c24r24>e24r8]3<c24r12>e24r12<c24r24
+FG [>e24<c24c24]2>e24<c24
+FG [c24r8>e24r12<c24c24r24c24r24>e24r24c24r24<c24r8>e24r12<c24c24r24c24r24>e24e24c24r24<]2
+FG [c24r8>e24r12<c24c24r24c24r24>e24r24c24r24<c24r8>e24r12<c24c24r24c24r24>e24e24c24r24<]2
+FG [c24r8>e24r12<c24c24r24c24r24>e24<c24r24c24]4
+FG [c24r8>e24r12<c24c24r24c24r24>e24<c24r24c24]3>
+FG b24b24b24b24g24g24g24g24d24d24d24d24<a24a24a24a24]2
+FG [c24r8>e24r12<c24c24r24c24r24>e24r8<]3
+FG c24r8>e24r12<c24c24r24c24r24>e24r12<c24
+FG [c24r8>e24r12<c24c24r24c24r24>e24r8<]3 c24r8 [>e24r24<c24r24]2
+FG >e24r24e24e24
+FG [<c24r8>e24r12<c24c24r24c24r24>e24r8]3
+FG <c24r8>e24r12<c24c24r24c24r24>e24r12<c24
+FG [c24r8>e24r12<c24c24r24c24r24>e24r8<]3
+FG c24r24>e24<c24>b24b24g24g24<c24c24>e24<c24>e24r24e24e24
+FG ]0
+
+@e8={0,0,@14fd850}
+
+DE q8[;L
+DE [
+D v12@13h1,3,0,1o4 <
+E v11@8@e8h1,3,0,1o4 <
+DE [g12r24g24r12g4d12e12]2 [a12r24a24r12a4e12f+12]2
+DE a12r24a24r12a4e12d+12d12r24d24r12d4f+12a12g12r24g24r12g4
+DE a6b8a+8a12f+8e8d12
+DE [g12r24g24r12g4d12e12]2 [a12r24a24r12a4e12f+12]2
+DE a12r24a24r12a4e12d+12d12r24d24r12d4f+12a12g12r24g24r12g4
+DE d12e12g8>g8<g12>g12<g12>g12<g12
+DE a12r24a24r12a6a12e12d+12 d12r24d24r12d6d12f+12a12
+DE [g12r24g24r12g6g12d12e12]2 [a12r24a24r12a6a12d12e12]2
+DE [g12r24g24r12g6g12d12e12]2 c12r24c24r12c6c12>c12<c12
+DE d12r24d24r12d12>d12<d12e12f+12 g12r24g24r12g6g12>g12<g12
+DE e12r24e24r12e6>e12<e12<g+12> a12r24a24r12a12>a12<a12e12d+12
+DE d12r24d24r12d12>d12<d12f+12a12 g12r24g24r12g6>g12<d12e12
+DE g6a6f+6e6
+DE ]2
+DE g12r24g24r12g4d12e12 g12r24g24r12g4d12c+12
+DE c12r24c24r12c6c12b12a12 c12r24c24r12c6c12>c12<c12
+DE d12r24d24r12d4f+12e12 d12r24d24r12d6d12f+12a12
+DE g12r24g24r12g4b12a12 d12r12d12>d12<c+12>c+12<c12>c12<<
+DE b12r24b24r12b6>b12f+12c12< b12r24b24r12b6>b12f+12a12
+DE e12r24e12r24e6f+12g12b12 >e12r24<e24r12e6f+12g12e12
+DE c12r24c24r12c6c12<b12>c12 c+12r24c+24r12c+4>c+12<c+12
+DE d12r24d12r24d6d12>d12<a12 d12r24d24r12d6>d12<e12f+12
+DE ]0
+
+@e9={1,0,fe0=242}
+@e10={1,0,f} ; whistle
+@e11={1,0,f0=96}
+@e12={1,0,fc0=232}
+@e13={1,0,f0=242}
+
+12 k6
+
+1 q8[;L
+1 [v10@9h20,3,0,0@p4o4
+1 b2&b6r6b6a6g6e2&e6r6f+6g6b6>e4&e12<b4&b12a4&a12>d4&d12<g4&g12>g6f+12e12g8f+8e12d8c8<b12
+1 b2&b6r6b6a6g6e2&e6r6 f+6g6b6>c4&c12<g4&g12f+4&f+12g6a6g2&g6
+1 @10 >>> 
+1 \8 h0,1,0,-2 [g96&]3g96 [[g96&]7g96 [g96&]11r96]2[g96&]11r96[g96&]7g96 \0 hf
+1 @9(<<
+1 e12e12e12e12a12b6a12 g12f+12b12a12g12f+12e12f+12
+1 g12b12b12a12a12g12g12f+12 f+12e12e12d12d12e12e12g12
+1 e12e12e12e12a12b6a12 c6e6g6a6
+1 b4g4b24a24g24f+24 a24g24f+24e24g24f+24e24d24f+24e24d24c24<b24>c24d24e24
+1 @11(
+1 [g24>g24<]4[e24>e24<]4[a24>a24<]4[f+24>f+24<]4
+1 [d24>d24<]4[b24>b24<]8[g+24>g+24<]4
+1 [e24>e24<]4[c+24>c+24<]4[a24>a24<]4[f+24>f+24<]4
+1 @12)) b2g12a12b6d6e6f+6<
+1 ]2
+1 @13v6h40,3,0,1
+1 >>d4&d6b8a8b12a8g8a12g8f+8<b12>c4&c12e2f+6
+1 g6e6a4&a12f+8g8a12g8f+8g12f+8e8f+12e12f+24e24d2&
+1 d6d6c+6c6<b4&b12>b4&b12f+4&f+12f+8g8a12a4b24a24g4&
+1 g12r6e6f+6g6e2f+12g12e2f+12g12(<<a12g12f+12g12f+12
+1 e12d12e12f+12g12a12b12>c12d12e12
+1 ]0
+
+@e14={1,0,fd0=242}
+@e15={1,0,8f=4.c0=232}
+@e16={1,0,f0=242}
+
+2 q8[;L
+2 \1
+2 [v7@14hfr12o4
+2 b2&b6r6b6a6g6e2&e6r6f+6g6b6>e4&e12<b4&b12a4&a12>d4&d12<g4&g12>g6f+12e12g8f+8e12d8c8<f+12
+2 b2&b6r6b6a6g6e2&e6r6f+6g6b6>c4&c12<g4&g12f+4&f+12g6a6g2&g12
+2 @10)>>>
+2 h0,1,0,-2 [g96&]3g96 [[g96&]7g96 [g96&]11r96]2[g96&]11r96[g96&]7g96 hf
+2 @9(<<
+2 [e12]5 a12b6a12g12f+12b12a12g12f+12e12f+12g12b12b12a12a12g12
+2 g12f+12f+12e12e12d12d12e12e12
+2 ))<a12b12b12a12b4&b12a6a6b6>c6e4d4&d24(
+2 b24a24g24f+24a24g24f+24e24g24f+24e24d24f+24e24d24c24<b24>c24d24
+2 @15h10,4,0,1 
+2 <e4&e12g4&g12f+4&f+12a4&a12g4&g12b4&b12>e6<b6g+6e6a6e4&
+2 e12c+6a6f+4&f+12d6b4&b12g4&g12b6d6e6f+6
+2 ]2
+2 @16v8
+2 d12e12e12d12g8d8g12 d12e12e12d12b8b8g12
+2 e12f+12f+12e12g8e8c6e12d12f+12e12g12c12e12
+2 f+12a12a12f+12d8e8f+6a12d12e12f+12g12a12f+12
+2 g12b12a12>c12<b12>d12c12e12 d12e12d12>d12<c+12>c+12<c12>c12<
+2 d+12e12e12d+6e12f+12c12< b6>d+6f+6d+6 
+2 f+4g24f+24e6d+12e12 f+4e4d+12e12 
+2 [g12<g12b12g12>]4
+2 <a12g12f+12g12f+12e12d12e12 f+12g12a12b12>c12d12e12c12
+2 ]0
+
+@e7={2,0,c90=12}
+@e17={2,15,c0=12}
+
+3 q8[;L
+3 [ v9 @7
+3   [)c24(c24c24c24)@17c24@7(c24c24c24]15 c24c24c24c24)@17c24c24c24c24@7(
+3   [)c24(c24c24c24)@17c24@7(c24c24c24]14 c24c24c24@17c24@7c24c24c24c24
+3   [@17c24@7c24c24]2 c24c24
+3   [)c24(c24c24c24)@17c24@7(c24c24c24]32
+3 ]2
+3 [)c24(c24c24c24)@17c24@7(c24c24@17c24@7]14 )c24(c24c24c24
+3 [)@17c24@7(c24]4 )@17c24r24c24c24@7(
+3 [)c24(c24c24c24)@17c24@7(c24c24c24]14 )
+3 @17n20[c24r12]2c24r8c24r8c24r24
+3 ]0

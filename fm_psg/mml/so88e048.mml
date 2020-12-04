@@ -1,0 +1,99 @@
+;[gain=1.0;name=so88e048]
+#opll_mode 0
+#tempo 100
+#title { "Village (The Head of Medusa)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  15, 6, 3, 4, 0, 4, 0, 0, 0, 0, 0 }
+
+@e0={0,0,@15cf}
+@e1={0,0,@15[y5,245y7,50fy5,247y7,52f]} ; AR=5.5, RR=3.5
+@e2={0,0,@6f@3f}
+
+9A [;L
+9 @0@e0v12 o4 >\1
+A @1@e1v12 o4 
+9A [r4c2&c4r4c+2&c+4]2
+9A [r8<c8f8g8g+8a+4c8c+8>c8<a+2&a+4r8c8f8g8g+8a+4c8c+8>c8<a+6&a+48g+32a+32g+8g4&g8[r4c2&c4r4c+2&c+4]2>]2
+9A [c8<g+8>c8<a+2&a+8>c8<g+8>c8c+2&c+8]2
+9A [c8c8r8c8c8c8]4[<a+2&a+4>]4<a+2&a+4a+2&a+4a+2&a+4
+9A [g+2&g+4]3g2&g4g1&g2
+9A ]0
+
+BC [;L
+
+B @0@e0v12 o3 >\1
+C @1@e1v12 o3 
+BC [r4g+2&g+4r4a+2&a+4]2 
+B <
+
+BC [
+B @0@e0v12 o3 >\1
+C @1@e1v12 o3
+BC hf
+BC [r8c2&c4&c8c+4f2&f4]2
+B <
+
+B @3@e2v11\1 >
+C @3@e2v11\0 >
+BC h4,4,0,1
+BC >c2&c8<f8g8g+8>c8<a+4f4g4&g8>
+BC c2&c8<f8g8g+8>c8<a+4>d+4c+32d+32c+4&c+16<
+B <
+C <
+BC ]2
+
+B @0@e0v12 >\1
+C @1@e1v12 
+BC hf
+BC [g+4&g+8f+2&f+8g+4&g+8a+2&a+8]2
+BC [f8f8r8f8f8f8]2[e8e8r8e8e8e8]2
+BC [g2&g4]4g2&g4 g2&g4g2&g4 [f2&f4]3f2&f4e1&e2
+B <
+BC ]0
+
+DE [;L
+D @0@e0v13o2 
+E @1@e1v13o2 <
+DE [f8>c8g2&g4<f8>c+8g+2&g+4<]10
+DE [f4&f8f+4a+8>c+8<a+8]4
+DE [>c8c8r8c8c8c8<]2[c8c8r8c8c8c8]2[c2&c4]4
+DE g8g8r8g8g8g8 e8e8r8e8e8e8c8c8
+DE r8c8c8c8c+8c+8r8c+8c+8c+8
+DE <a+8a+8r8a+8a+8a+8g8g8r8g8g8g8>
+DE c8c8r8c8c8c8c1&c2
+E >
+DE ]0
+
+@e9={0,0,fc0=230}
+@e10={0,0,fc0=24}
+@e11={0,0,fdc0=230}
+
+13 [;L
+13 @9v10o4
+3 \1
+13 [r4g2&g4]3r4g2&f+32&f32&e32&d+32&d32&c+32&c32&<b32
+13 [[r4>c2&c4r4c+2&c+4<]2(([r4>g2&g4r4g+2&g+4<]2))]2
+13 [f4&f8c+2&c+8f4&f8f+2&f+8]2>[g8g8r8g8g8g8]4
+13 (>
+13 [c+8c8c+8g+8]6c2&c4c+2&c+4e2&e4[c+2&c+4]3c2&c4c1&c2
+13 ]0
+
+2 [;L
+2 h0,1,0,1@p1
+2 @10\1o7v9
+2 [r16c16<c16c16[>c16c16<c16c16((]7>]2
+2 hf
+2 @11v10 
+2 <<< [[r4g2&g4r4g+2&g+4]2 [r4f2&f4]4]2 >>
+2 v9
+2 [c8<g+8>c8<a+2&a+8>c8<g+8>c8c+2&c+8]2
+2 [c8c8r8c8c8c8]4r8
+2 ((<
+2 [c+8c8c+8g+8]5c+8c8c+8a+2&a+4a+2&a+4a+2&a+4[g+2&g+4]3g2&g4g1&g2
+2 ]0
+

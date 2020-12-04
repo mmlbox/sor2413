@@ -1,0 +1,190 @@
+;[gain=1.0;name=so88e038]
+#opll_mode 0
+#tempo 116
+#title { "Arch Daemon (The Cursed Ship Queen Mary)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+123 v10 ; PSG Master Volume
+
+@v15 = { ; Bass
+;       TL FB
+        29, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 8, 2, 0, 0,10, 0, 1, 0, 0, 1,
+  15, 6, 2, 1, 0, 0, 0, 1, 0, 0, 1 }
+  
+@v16 = { ;
+;       TL FB
+        23, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  15, 7, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+@v17 = { ; Bell
+;       TL FB
+        41, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 4,14, 0, 0,14, 0, 0, 0, 0, 0,
+  15, 3,15, 1, 0, 4, 0, 0, 0, 0, 0 }
+  
+@v18 = { ; Tom
+;       TL FB
+         0, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  15, 6, 8, 4, 0, 0, 0, 0, 0, 0, 0 }
+
+@e7={0,0,@10d@14e8520}
+
+;9ABCDEFG !
+
+9A v12
+9 @13    o4 <
+A @7@e7  o4 <
+9A [d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16e16]7
+9A d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d+16e16
+9A [;L
+9A [d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16e16]3
+9A d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16<b16
+9A [>d16<d16d16>d16<d16d16>d16e16r16a+16b16r16>d16<b16a+16b16<]2
+9 >
+A >
+
+9 @5
+A @6
+9A d2e2f2g2
+
+9 @13   <
+A @7@e7 <
+9A [>d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16e16<]4
+9A [>d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16e16<]3
+9A  >d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d+16e16
+9A ]0
+  
+F y14,32v11h1,20,0,-10o3soq1
+G v8@14o1
+FG [g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>g16<g16g32r32g32g32]8
+FG [;L
+FG [g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>g16<g16g32r32g32g32]3
+FG g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>b32b32g32r32g32g32d32d32
+FG [<g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>g16<g16g32r32g32g32>]2
+FG [<g12>b12b12g12g12d12]3b16b16g16g16d16d16<b16b16
+FG [g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>g16<g16g32r32g32g32]4
+FG [g32r32>b32r32g32r32d32r32b32r32g32r32d32r32<g16g16r16g16r16>g16<g16g32r32g32g32]4  
+FG ]0
+
+DE q8 v11
+D @15 h1,13,0,-10 o4  v11 \-1
+E @13 h1,13,0,-10 o4 < v10  \0
+DE [d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16a16g16d16e16]3
+DE d16>d16e16<e16a+16e16b16>d16<d16>d16e16<e16r16
+E >
+
+D @16\1v12@16h18,2,0,3 ; ML3
+E @16\0v12@16h18,2,0,3 ; ML4 
+D [<g+48a24b16>f16f+2&f+4r16]2
+E [c+48d24e16a+16b2&b4r16]2
+D <g+48a24b16>f16f+6&f+48d6&d48<b2&b8r16>
+E c+48d24e16a+16b6&b48g6&g48e2&e8r16
+D <g+48a24r16a16r16g+48a12&a48a16a16r16a16r16a16a16a+16>f16
+E  c+48d24r16d16r16c+48d12&d48d16d16r16d16r16d16d16d+16 a+16
+
+DE [;L
+D [e2&e4r16<g+48a24b16>f16]2 
+E [b2&b4r16c+48d24e16a+16]2
+D e6&e48d6&d48<b2&b8r16g+48a24r16a16r16g+48
+E b6&b48g6&g48e2&e8r16c+48d24r16d16r16c+48
+D a12&a48a16a16r16a16r16a16e16d16<a16>
+E d12&d48d16d16r16d16r16d16<b16g16d16
+DE [ 
+
+D @16v12\1h0,1,0,14 ; ML3
+E @16v12\0h0,1,0,14 ; ML4
+D c6&c48<a6&a48>c16<b8> hf
+E f6&f48d6&d48f16e8 hf
+
+D @15v12 \-1
+E @13v11 <\0
+DE a+16b16r16>d16<b16a+16b16
+E >
+
+DE ]2
+
+D h0,3,0,1@2 v10
+E h0,3,0,1@17v10
+DE f6d6f6g6e6g6a6f6a6b6g6b6
+
+@e0={0,0,@13f@3f}
+@e1={0,0,@14f@9f}
+
+D @0@e0h18,1,0,2 \1
+E @1@e1h18,1,0,2 \0 <
+DE >>a+2&a+3&a+12&a+48b8r8
+DE r4r4r4v10h18,1,0,2a+1b8
+E >
+
+D @18h0,20,0,-10 \1
+E @18h0,20,0,-10 \0
+DE b32b32b16b16g16g16g16g16d16d16d16d16<b16 ; TOM
+
+D @16\1v12h18,2,0,3 ; ML3
+E @16\0v12h18,2,0,3 ; ML4
+D [<a16b16>f16e2&e4r16]2
+E [d16e16a+16b2&b4r16]2
+D <a16b16>f16e6&e48d6&d48<b2&b8r16
+E d16e16a+16b6&b48g6&g48e2&e8r16
+D a16r16a16r16a8a16a16r16a16r16a16a16a+16>f16
+E d16r16d16r16d8d16d16r16d16r16d16d16d+16a+16
+DE ]0
+
+@e9={1,0,fdc0=242}
+@e10={3,20,fc0=24}
+@e11={1,0,bcde0=242}
+@e12={1,0,fc0=24}
+
+123 k3
+
+1 );v11
+1 @9o4
+1 [b16a+16g16e16r16d16r16d16r16d16r16d16d16d+6&d+48]7
+1 b16a+16g16e16r16d8d16d16r16d16r16d16d16d+16a+16
+1 [;L
+1 [b16a+16g16e16r16d16r16d16r16d16r16d16d16d+6&d+48]3
+1 b16a+16g16e16r16d8d16d16r16d16r16d16d16g16b16
+1 [@9<a6&a48a16r8a16b16@10r16c16c16r16c16r16c16c16>]2
+1 @11(;v10 
+1 a6f6a6b6g6b6>c6<a6>c6d6<b6>d6<e2&e3&e12&e48e8r2r3r24e1e8r2r3r12r48
+1 @9);v11
+1 [b16a+16g16e16r16d16r16d16r16d16r16d16d16d+6&d+48]3
+1 b16a+16g16e16r16d8d16d16r16d16r16d16d16d+16a+16
+1 ]0
+
+2 \1;v10
+2 @9o4
+2 [e16d16<b16g16r16g16r16g16r16g16r16g16g16g6&g48>]7
+2 e16d16<b16g16r16g8g16g16r16g16r16g16g6&g48
+2 [;L
+2 [>e16d16<b16g16r16g16r16g16r16g16r16g16g16g6&g48]3
+2  >e16d16<b16g16r16g8g16g16r16g16r16g16g6&g48
+2 [@9f6&f48f16r8f16g16@12r16>>a+16b16r16>d16<b16a+16b16<<]2>>
+2 @11(;v9
+2 f6d6f6g6e6g6a6f6a6b6g6b6
+2 <a+2&a+3&a+12&a+48b8r2r3r24a+1b8r2r3r12r48
+2 @9);v10
+2 [e16d16<b16g16r16g16r16g16r16g16r16g16g16g6&g48>]3
+2 e16d16<b16g16r16g8g16g16r16g16r16g16g6&g48
+2 ]0
+
+3 \-1;v10
+3 @9o4
+3 [g16g16e16<b16r16b16r16b16r16b16r16b16b16b6&b48>]7
+3 g16g16e16<b16r16b8b16b16r16b16r16b16a+6&a+48
+3 [;L
+3 [>g16g16e16<b16r16b16r16b16r16b16r16b16b16b6&b48]3
+3  >g16g16e16<b16r16b8b16b16r16b16r16b16b16d16g16
+3 [@9d6&d48d16r8d16e16@12r16.>>a+16b16r16>d16<b16a+16b32<<]2>>
+3 @11(;v9
+3 d6<a6>d6e6<b6>e6f6c6f6g6d6g6<g2&g3&g12&g48g8r2r3r24g1g8r2r3r12r48
+3 @9);v10
+3 [g16g16e16<b16r16b16r16b16r16b16r16b16b16b6&b48>]3
+3 g16g16e16<b16r16b8b16b16r16b16r16b16a+6&a+48
+3 ]0

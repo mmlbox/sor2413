@@ -1,0 +1,264 @@
+;[gain=1.0;name=so88e017]
+#opll_mode 0
+#lfo_mode 1
+#tempo 98
+#title { "Tower (The Tower of Thieves)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  13, 6, 3, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+@v16 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  13, 6, 3, 4, 0, 4, 0, 0, 0, 0, 0 }
+
+@v17 = {
+;       TL FB
+        38, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 7, 2, 2, 0,10, 0, 0, 0, 0, 0,
+  15, 6, 4, 2, 0, 0, 0, 0, 0, 0, 1 }
+
+@v18 = {
+;       TL FB
+        30, 6,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0,
+  10, 5, 2, 1, 0, 4, 0, 0, 0, 0, 1 }
+
+
+@v19 = {
+;       TL FB
+        22, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0,
+  12, 7, 1, 1, 0, 4, 0, 0, 0, 0, 0 }
+
+;123 !
+
+9A q8
+9 @15v11o3 \1 >
+A @15v11o3 \0
+9A a+24>e8<a24>d+8<g+24>d8<g24>c+8<<a+24>e8<a24>d+8<g+24>d8<g24>c+8
+9 <
+
+BC q8l48
+B @15v12r12o4 \1 >
+C @15v12r12o4 \0
+BC g12r12f+12r12f12r12e12r12<g12r12f+12
+BC r12f12r12e12
+B <
+
+BC [;L
+B @16v11 o3 \1 >
+C @16v11 o3 \0 
+BC [a+48r48a+48r48a+48r48a+48r48a+4&a+6&a+16r48r6a+12&a+48r48a+48r48r12a+6&a+16r48]2
+B <
+
+B @13 v11 o5 <
+C @17 v10 o5
+BC [
+BC d48r48f48r48e48r48f48r48g16r48f48r48e12&e48r48c16r48r6|
+BC d48r48f48r48e48r48f48r48g16r48f48r48e12&e48r48<a16r48r24a48r48>c48r48c+48r48
+BC ]2
+BC d48r48f48r48e48r48f48r48g16r48f48r48e12&e48r48<a16r48r24a12&a48r48
+B >
+
+B @18v12h22,4,0,1 o3 \0
+C @18v12h22,4,0,1 o3 \1 
+BC [g48r48a48r48a+48r48>c+48r48e4&e6&e16r48]2
+BC [e48r48<g48r48a+48r48>e48r48g48r48<a+48r48>f48r48<a+48r48>]3
+BC e48r48c+48r48<a+48r48g48r48e48r48g48r48a+48
+BC r48>c+48r48
+
+B @13 v11 o5 <
+C @17 v10 o5
+BC hf
+BC [
+BC d48r48f48r48e48r48f48r48g16r48f48r48e12&e48r48c16r48r6
+BC d48r48f48r48e48r48f48r48g16r48f48r48e12&e48r48<a16
+BC r48r24a48r48>c48r48c+48r48]2
+B >
+
+B @19 v10 \1
+C @19 v10 \0
+BC hf
+BC <<a4&a6&
+BC a16r48>c8&c48r48<
+BC d+4&d+16r48>d4&d16r48
+BC c2&c16r48d48r48c48r48<a4&a16r48
+BC e12&e48
+BC r48f12&f48r48g16r48a4&a6&a16r48>c8&c48r48
+BC <d+4&d+16r48>d4&d16
+BC r48<g4&g6&
+BC g48r48>c12&c48r48d16r48e2&e8&e48r48
+
+B @18v11o4 \0
+C @18v11o4 \1
+BC ho
+BC [a48r48a48r48r24a6&a48r48a48r48a48r48r24a6&a48r48]2
+BC e48r48f48r48g+48r48a48r48a+48r48>c+48r48d48r48d+48r48
+BC e48r48f48r48g+48r48a48r48a+48r48>c+48r48d48r48d+48r48
+BC e48r48d48r48<a+48r48>d48r48<a+48r48g48r48a+48r48g48r48
+BC e48r48g48r48e48r48<a+48r48>e48r48<a+48r48g48r48e48r48
+
+B @18v11o4 \0
+C @18v11o4 \1
+BC [a48r48a48r48r24a6&a48r48a48r48a48r48r24a6&a48r48]2
+BC e48r48d48r48<a+48r48>e48r48d48r48<a+48r48g16r48>
+BC e48r48d48r48<a+48r48a48r48g48r48a48r48a+48r48>d48r48e16
+BC r48<a+48r48>f16r48<a+48r48>f+16r48<a+48r48>g4&g48r48
+
+
+B @13 v11 o4 <
+C @17 v10 o4
+BC [>d16r48d48r48r24<a16r48>c48r48d48r48r24d48r48c16r48g16r48f16r48d12&d48r48d48r48r4c48r48d48r48<a48r48g48r48f16r48]2
+
+B @18v11h22,4,0,1o4 \0 q8
+C @18v11h22,4,0,1o4 \1 q8
+BC >>e48r48c+48r48<a+48r48g48r48e48r48c+48r48e48r48g48r48
+BC [<a+48r48>c+48r48e48r48g48r48a+48r48e48r48g48r48a+48r48]2>
+BC e48r48c+48r48<a+48r48g48r48e48r48c+48r48<a+48r48g48r48e48r48f48r48
+BC e48r48f48r48f48r48f+48r48f48r48f+48r48f+48r48g48r48f+48r48g48
+BC r48g48r48g+48r48g48r48g+48r48>c+48r48e48r48g48r48a+48r48>e4&e6&e16r48
+BC ]0
+
+@e0={0,0,@14fd840}
+
+DE q8
+D @13 v7 o3 <
+E @1@e0 v7 o3 
+DE r2r16r12r48 [a24a24a24a24)]4
+DE [;L
+D @13   v12 o3 <
+E @1@e0 v11 o3 
+DE a12a24g12e12<a+24>a12a24g12>e24<a+24>e24<a12a24g12e8a12a24g12
+DE >d24d+24e24<a12a24g12e8a12a24g12e24d24d+24a12a24g12e12<a+24>a12a24g12>
+DE e24<a+24>e24
+DE (
+DE d24f24e24f24g12f24e8c12
+DE r6d24f24e24f24g12f24
+DE e8<a12r24a24>c24c+24d24f24e24f24
+DE g12f24e8c12r6d24f24e24f24
+DE g12f24e8<a12
+DE r24a8 )
+DE [a12>e24<a12>f24<a12>g12<a24>f12<a24>e12<]4
+DE ( [>d24f24e24f24g12f24e8c12r6d24f24e24f24g12f24e8<a12r24a24>c24c+24<]2 )
+DE [>d12>d24r24<g24a24>c24d12d24c12<a24g24a24>c24<d+12>d+24r24<a+24a24g24d+12d+24>d+24r24<a+24a24a+24g24c12>c24r24<g24f24e24c12>c24<g24>c24
+DE e24f24g24e24<<a12>a24r24d24e24g24a12a24g24e24a24g24e24a24<]2
+DE [[>d24d24r24d6&d24<]4[a12>a12a24g24e24a12a24g12e24f24c24c+24<]2]2
+DE (
+DE [>d12d24r24<a12>c24d24r24d24c12g12f12d8d24r4c24d24<a24g24f12]2
+DE [a12a24a24a+12a24>c+12<a24>e12<a24>g24<a24>a24<]4
+DE )
+DE ]0
+
+@e7={0,0,f0=64}
+
+F y14,32
+F q8@7@e7v11o2 [r24r8]8
+F [;L
+F h0,72,0,-12v12o3soq1
+F [e24e24r24r24>b12r24r24<e24e24>r24r24r24g24r24r24<]7
+F  e24e24r24r24>b12r24r24 <<e24e24 >> )g24g24e24e24<a24a24(
+F [e24e24r24r24>g12<e24>g12<e24>g12<e24r24>g24g24<]3 >
+F [e24]4<[g24]4 e24e24>>e24e24<a24a24e24e24
+F [<e24e24r24r24>b12r24r24<e24e24>r24r24r24g24r24r24]4
+F [<e24r24r24r24>g24<r24r24r24>]15 [a48a48a24e24c24]2
+F [<e24e24r24e24r24 > )g48g48c+24<g24( e24e24r24e24r24 > )c+48c+48<g24e24(
+F   e24e24r24e24r24 > )g48g48c+24<g24( e24e24r24e24>e24e24e24e24
+F   [<e24e24r24r24>g12<e24>g12<e24>g12<e24r24>g24g24]2
+F ]2
+F [[<hoe24e24hf>r24r24r48r48r24r24r24]3 ho<e24e24>>c24c24<a24a24e24e24 ]2
+F [<e24e24r24r24>g12<e24>g12<e24>g12<e24r24>g24g24]3 
+F [e24]4 [>g48g48e24c24<]2 <e24e24>e24e24e24e24
+F ]0
+
+*0={v8o1}
+*1={v10o1}
+*2={v8o2}
+#macro_offset { b=0, h=1, t=2 }
+
+G q8v11@14o3 [r24r8]8
+G [;L
+G o1
+G [*bc24c24*hc24c24*bc12*hc24c24*bc24c24*hc24c24c24*bc24*hc24c24]7
+G *bc24c24*hc24c24*bc12*hc24c24 *bc24c24 *t((g24g24e24e24<a24a24))
+G [*bc24c24*hc24c24*bc12c24c12c24c12c24*hc24*bc24c24]3
+G [c24]4[c24]4c24c24c24c24c24c24c24c24
+G [*bc24c24*hc24c24*bc12*hc24c24*bc24c24*hc24c24c24*bc24*hc24c24]4
+G [*bc24*hc24c24c24*bc24*hc24c24c24]15*b[c48c48c24c24c24]2
+G [*bc24c24r24c24r24 *t((g48g48c+24<g24)) *bc24c24r24c24r24 *t((c+48c+48<g24e24))
+G  *bc24c24r24c24r24 *t((g48g48c+24<g24)) *bc24c24r24c24c24c24c24c24
+G [*bc24c24*hc24c24*bc12c24c12c24c12c24*hc24*bc24c24]2]2
+G [[*bc24c24*hc24c24c48c48c24c24c24]3*bc24c24c24c24c24c24c24c24]2
+G [*bc24c24*hc24c24*bc12c24c12c24c12c24*hc24*bc24c24]3
+G [c24]4[c48c48c24c24]2c24c24c24c24c24c24
+G ]0
+
+@e9={1,0,fc0=160}
+@e10={1,0,fc0=160}
+@e11={1,0,fc}
+@e12={3,0,f1}
+@e13={1,0,fc}
+
+1 q8@9v10r12o5
+1 g24a+12r24f+24a12r24f24g+12r24e24g12r24<g24a+12r24f+24a12r24f24g+12r24e24g24
+1 [;L
+1 @10v10o4
+1 [g24g24g24g24g2r6g8g24r12g4]2
+1 @11
+1 a4&a12g4&g12a+4&a+12g4&g12a4&a12g4&g12a+4&a+12r12g4e2&e6g2&g6
+1 [a+24e24g24a+24>e24<g24>d24<g24]3>c+4&c+12
+1 @11 [<a4&a12g4&g12a+4&a+12g4&g12>]2 @10 
+1 [[<a24d24d24d24>]4[<a+24d+24d+24d+24>]4[<g24c24c24c24>]4[<a24e24e24e24>]4]2 ) 
+1 [[<g24g24r24g6&g24f24f24r24f6&f24>]2r6<e8e24r12e4r6a+8a+24r12a+4>]2 (
+1 @12h1,72,0,11
+1 [r6v12[f48(((]4r24v12[f48(((]4r24[v12[f48(((]2]2r6]4
+1 @13hf [a+24g24e24c+24(]4 v10
+1 <c+8c+8c+12c+8d8d+12e8e8e12e8f8f+12[g8g8g12]2
+1 ]0
+
+2 q8@9v8r12o6g24a+12r24f+24a12r24f24g+12r24e24g12r24<g24a+12r24f+24a12r24f24g+12r24e24g24
+2 [;L
+2 @10v10o5
+2 [<e24e24e24e24e2r6e8e24r12e4>]2 
+2 @11<
+2 f4&f12e4&e12g4&g12e4&e12f4&f12e4&e12g4&g12r12c+4<a+2&a+6>e2&e6
+2 [g24<a+24>e24g24a+24e24a24e24]3a+4&a+12
+2 @11 [f4&f12e4&e12g4&g12e4&e12]2 @10
+2 [[d24<a24a24a24>]4[d+24<a+24a+24a+24>]4[c24<g24g24g24>]4[e24<a24a24a24>]4]2)
+2 [[e24e24r24e6&e24e24e24r24e6&e24]2r6a+8a+24r12a+4r6>e8e24e12e4<]2(
+2 @12h1,72,0,11
+2 [r6v11[a48(((]4r24v11[a48(((]4r24[v11[a48(((]2]2r6]4
+2 @13hf [>g24e24c+24<a+24(]4 v10
+2 <a+8a+8a+12a+8b8>c12c+8c+8c+12c+8d8d+12[e8e8e12]2
+2 ]0
+
+3 q8@9v10\1r12o5g24a+12r24f+24a12r24f24g+12r24e24g12r24<g24a+12r24f+24a12r24f24g+12r24e24g24
+3 [;L
+3 @10v10o4
+3 [g24g24g24g24g2r6g8g24r12g4]2 
+3 @11
+3 a4&a12g4&g12a+4&a+12g4&g12a4&a12g4&g12a+4&a+12r12g4e2&e6g2&g6
+3 [a+24e24g24a+24>e24<g24>d24<g24]3>c+4&c+12
+3 @11
+3 [<a4&a12g4&g12a+4&a+12g4&g12>]2
+3 @10
+3 [[<a24d24d24d24>]4[<a+24d+24d+24d+24>]4[<g24c24c24c24>]4[<a24e24e24e24>]4]2)
+3 [<g24g24r24g6&g24f24f24r24f6&f24>]2
+3 r24<e24f24g+24a24a+24>c+24d24d+24e24f24g+24a24a+24>c+24d24d+24e24d24<a+24>
+3 d24<a+24g24a+24g24e24g24e24<a+24>e24<a+24g24
+3 [g24g24r24g6&g24f24f24r24f6&f24]2
+3 r24e24d24<a+24>e24d24<a+24g12>e24d24<a+24a24g24a24a+24>d24e12<a+24>f12<a+24>f+12<a+24>g4(
+3 [>d12d24r24<a12>c24d24r24d24c12g12f12d8d24r2<]2
+3 @13hf
+3 [>a+24g24e24c+24(<]4v10
+3 c+8c+8c+12c+8d8d+12e8e8e12e8f8f+12[g8g8g12]2
+3 ]0

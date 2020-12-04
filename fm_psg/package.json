@@ -1,0 +1,22 @@
+{
+  "name": "sor2413",
+  "version": "1.0.0",
+  "description": "YM2413 port of SORCERIAN(88) music",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf mgs/*",
+    "build": "mkdir -p mgs/ja mgs/en ; node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mmlbox@github.com/mmlbox/sor2413.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/mmlbox/sor2413/issues"
+  },
+  "homepage": "https://github.com/mmlbox/sor2413#readme",
+  "dependencies": {
+    "mgsc-js": "^1.1.1"
+  }
+}

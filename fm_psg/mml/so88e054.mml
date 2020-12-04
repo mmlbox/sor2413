@@ -1,0 +1,203 @@
+;[gain=1.0;name=so88e054]
+#opll_mode 0
+#tempo 98
+#title { "Double Devils (The Fountain of Youth)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+
+@v15 = {
+;       TL FB
+        33, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 7, 2, 3, 0,10, 0, 0, 0, 0, 1,
+  10, 5, 5, 3, 0, 0, 0, 0, 0, 0, 1 }
+
+@v16 = { ; BD
+;       TL FB
+         0, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10,15,10, 0, 0, 0, 0, 1, 0, 0,
+  15, 8,15,12, 0, 0, 0, 0, 1, 0, 0 }
+
+@v17 = { ; SD
+;       TL FB
+        19, 0,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10,11, 0, 0, 0, 0, 0, 1, 0, 0,
+  15, 8, 2, 7, 0, 0, 0, 0, 0, 0, 0 }
+
+@v18 = { ; TOM
+;       TL FB
+        19, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15,10,15, 0, 0, 2, 0, 0, 0, 0, 0,
+  15, 7,15, 4, 0, 2, 0, 0, 0, 0, 0 }
+
+*6={@16o3} ; bd
+*7={@17o5} ; sd
+*8={@18o3} ; tom
+
+#macro_offset { b=6, s=7, m=8 }
+
+9 ; [;L
+9 ;h1,50,0,-10v14 ; v13
+9 ;[*bc16r16*sc8*bc16c16*sc8*bc16r16*sc8*bc16c16*sc16*mg32c32]9
+9 ;*bc16r16*sc8*bc16c16*sc8*bc16r16*sc8c16c16c16c16
+9 ;*bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8c16c16c16
+9 ;*bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8[c32]6
+9 ;*s(6[c16c16c16c16)]6 *mc+16c+16r16c+16r16g+16e16c+16
+9 ;[*bc16r16*sc8*bc16c16*sc8]7
+9 ;*bc16r16*sc8*m(3c16c16c16c16)3
+9 ;[*bc16r16*sc8*bc16c16*sc8]7
+9 ;*bc16r16*sc8*mc16c16c16c16
+9 ;[*bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8c16c16c16]4
+9 ;*s)<[a16]6>c32c32c16(*b
+9 ;]0
+
+*0={hfsfq8o2} ; bd
+*1={hfsfq4o4} ; sd
+*2={hosoq1o4} ; tom
+
+;9ABCDEFG !
+123 v10 ; PSG Master Volume
+
+#macro_offset { b=0, s=1, m=2 }
+
+F y14,33 [;L
+F h0,50,0,-10o2v13 ; v13
+F [*bc16r16*sc8*bc16c16*sc8*bc16r16*sc8*bc16c16*sc16*mg32c32]9
+F *bc16r16*sc8*bc16c16*sc8*bc16r16*sc8c16c16c16c16
+F *bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8c16c16c16
+F *bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8[c32]6
+F *s(6[c16c16c16c16)]6 *mc+16c+16r16c+16r16g+16e16c+16
+F [*bc16r16*sc8*bc16c16*sc8]7
+F *bc16r16*sc8*m(3c16c16c16c16)3
+F [*bc16r16*sc8*bc16c16*sc8]7
+F *bc16r16*sc8*mc16c16c16c16
+F [*bc16c16c16*sc8*bc16*sc16c16*bc16*sc16*bc16*sc8c16c16c16]4
+F *s)<[a16]6>c32c32c16(*b
+F ]0
+
+*3={o1q5v8} ; bd
+*4={o1q1v10} ; sd
+*5={o1q5v8} ; tom
+
+#macro_offset { b=3, s=4, m=5 }
+
+G @14sf [;L
+G [*bc16r16*sc16r16*bc16c16*sc16r16*bc16r16*sc16r16*bc16c16*sc16*mg32c32]9
+G *bc16r16*sc16r16*bc16c16*sc16r16*bc16r16*sc16r16c16c16c16c16
+G *bc16c16c16*sc16r16*bc16*sc16c16*bc16*sc16*bc16*sc16r16c16c16c16
+G *bc16c16c16*sc16r16*bc16*sc16c16*bc16*sc16*bc16*sc16r16[c32]6
+G *s(6[c16c16c16c16)]6 *mc+16c+16r16c+16r16g+16e16c+16
+G [*bc16r16*sc16r16*bc16c16*sc16r16]7
+G *bc16r16*sc16r16*m(3c16c16c16c16
+G [*bc16r16*sc16r16*bc16c16*sc16r16]7
+G *bc16r16*sc16r16*mc16c16c16c16
+G [*bc16c16c16*sc16r16*bc16*sc16c16*bc16*sc16*bc16*sc16r16c16c16c16]4
+G *s)[c16]6c32c32c16(*b
+G ]0
+
+@e0={0,0,@13f@3f}
+@e1={0,0,@14f@9f}
+
+BC l16
+BC [;L
+B @0@e0v10 \0 o3
+C @1@e1v10 \1 o3
+BC r2r16r64r2r16r64r2r16r64r4r64
+BC hf g2^48&g_>g2&g24^16^2.. h30,4,0,1
+BC >g16f16e16c16d16<g16a+16>c4&c16<a+16a16g16f16e2
+BC g16<g16>a16<a16>a+16<a+16>b16<b16
+BC [>>c1&c2&c16g16f16d16d+16d16<a+16g16<]2
+BC [>>c8r16<a+4&a+16a8r16g+16r16a+6&a+48<]2
+BC g4&g16b16>c16d4&d8g16a16b2&b16b16b16r16>c16r16d6&d48
+BC [>d+32c32<g32>d32<a+32g32>d+32<g32>f32<a+32g32>d+32<a+32g32>d32<g32]3
+BC >c16<a+16g16f16g16f16d+16c16f4&f8d+16f16
+BC a+4&a+8g+16a+16g4&g16b16>c16d16g16<b16>c16d16g16f16d+16f16
+BC g2&g16f32d+32f16d+32d32d+16d32c32d16c32<a+32>c8<c16>c2&c16
+BC <c16d16d+16f16 h75,72,0,-3d2&d8&hf<g6&g48f16d+16d16 h30,4,0,1d+8g16>c2&c4&c16
+BC [c8r16<a+4&a+16a8r16g+16r16a+6&a+48>]2
+BC g8r16f4&f16c8r16d+16r16f6&f48g8r16f4&f16g+8r16a+2&a+4&a+16
+BC ]0
+
+@e8={0,0,@14fdcba}
+
+9DE l96
+9DE [;L
+9 @8@e8v11o3 \1 <
+D @13  v12o3  q7 <
+E @15  v11o3
+9DE [g16g16>c16<g16a+16g16a16g16>c16<g16a+16g16a16g16a+16g16]5
+9DE g16g16>c16<g16a+16g16a16g16g16>g16<a16>a16<a+16>a+16<b16>b16
+9DE [c16c16f16c16d+16c16d16c16d+16c16d16c16d+16c16f16c16]4
+9DE [c16>c16<c16d+8>d+16<d+8f16>f16<f16g+16r16a+6&a+96r96]2
+9DE [<g16g16>g16<g16>f16<g16>g16<g16>]3
+9DE <g16g16r16a16r16b6&b96r96
+9DE [>c16c16>c16<c16a+16c16>c16<c16<]2
+9DE [g+16g+16>g+16<g+16>g16<g+16>g+16<g+16]2
+9DE [a+16a+16>a+16<a+16>g+16<a+16>a+16<a+16]2
+9DE [g16g16>g16<g16>f16<g16>g16<g16]2
+9DE [>c16c16>c16<c16a+16c16>c16<c16<]2
+9DE [g+16g+16>g+16<g+16>g16<g+16>g+16<g+16]2
+9DE a+16a+16>a+16<a+16>g+16<a+16>a+16<a+16
+9DE g16g16>g16<g16>f16<g16>g16<g16
+9DE >c16c16>c16<c16a+16c16>c16<c16
+9DE c16c16>c16<c16>c16<a+16g16f16
+9DE [c16>c16<c16d+8>d+16<d+8f16>f16<f16g+16r16a+6&a+96r96]3
+9DE c16>c16<c16d+8>d+16<d+8g+16>g+16<g+16a+2&a+4&a+16
+9DE ]0
+
+@e9={0,0,fb0=14}
+@e10={0,0,fb0=12}
+@e11={0,0,fb0=12}
+@e12={0,0,fc}
+
+1 (3
+1 [;L
+1 @9/2n0 ; v10
+1 )3 [c8]80
+1 [c16c16c16c8c16c16c16]4
+1 (6 [c16c16c16c16)]6 
+1 n10 ( ; v12
+1 c16c16r16c16r16c16c16c16
+1 @10/2
+1 n0 [c16c16c16c16]15 n10c16c16c16c16
+1 n0 [c16c16c16c16]15 n10c16c16c16c16
+1 @11/2 n10 
+1 [c16c16c16c8c16c16c16]8
+1 @11/1 o5 ) [g16r16]3 (
+1 @11/2 n10 c32c32c16
+1 (2; v10
+1 ]0
+
+2 (
+2 [;L
+2 @12
+2 r2r16r64r2r16r64r2r16r64r4r64
+2 o4d1&>d1
+2 [r8f16e16r16f16e16r16]4[g2f2d+2d4f4]2
+2 [<g8r16f4&f16c8r16d+16r16f6&f48>]2
+2 <d4&d16g16a16b4&b8b16>c16d2&d16d16d16r16d+16r16f6&f48
+2 [<g4>d+16c8<g2&g16>]2
+2 <f4>d16<a+8f2&f16f4>d16<b8f6&f48f8d+8f8
+2 [g4>d+16c8<g2&g16]2
+2 f4d+16f6&f48g4f16g6&g48c8d+16g2&g4&g16
+2 [g8r16f4&f16c8r16d+16r16f6&f48]2
+2 >c8r16<a+4&a+16a8r16g+16r16a+6&a+48>c8r16<a+4&a+16
+2 >d+8r16f2&f4&f16
+2 ]0
+
+3 (
+3 [;L
+3 \1@12r2r16r64r2r16r64r2r16r64r4r64
+3 o4d1&>d1
+3 [r8c16c16r16c16c16r16]4[g2f2d+2d4f4]2
+3 [<g8r16f4&f16c8r16d+16r16f6&f48>]2
+3 <d4&d16g16a16b4&b8b16>c16d2&d16d16d16r16d+16r16f6&f48
+3 [<g4>d+16c8<g2&g16>]2
+3 <f4>d16<a+8f2&f16f4>d16<b8f6&f48f8d+8f8
+3 [g4>d+16c8<g2&g16]2
+3 f4d+16f6&f48g4f16g6&g48c8d+16g2&g4&g16
+3 [g8r16f4&f16c8r16d+16r16f6&f48]2
+3 >c8r16<a+4&a+16a8r16g+16r16a+6&a+48>c8r16<a+4&a+16
+3 >d+8r16f2&f4&f16
+3 ]0
