@@ -79,7 +79,7 @@ BC ]0
 *1={v0}
 #macro_offset {b=0,h=1}
 
-F y14,32 [;L
+F y14,33 [;L
 F h1,40,0,-10 soq1 o3
 F [*be12*he24e24*b>e12*he24e24<]7 *b[>e24<]8
 F [
