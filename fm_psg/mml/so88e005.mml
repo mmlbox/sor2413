@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e005]
 #opll_mode 0
 #tempo 85
-#title { "Hydra (Lost Cane of the King)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Hydra (Lost Cane of the King)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 123 v10 ; PSG Master Volume
 

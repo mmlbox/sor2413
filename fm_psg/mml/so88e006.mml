@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e006]
 #opll_mode 0
 #tempo 128 ; 128.5
-#title { "Survived (Lost Cane of the King)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Survived (Lost Cane of the King)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 #alloc { 9=1200,A=1200,B=1300,C=1300,D=1300,E=1300 }
 

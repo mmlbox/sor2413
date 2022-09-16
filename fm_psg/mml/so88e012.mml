@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e012]
 #opll_mode 0
 #tempo 119
-#title { "Kraken (The Floodgate of Lucifer)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Kraken (The Floodgate of Lucifer)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 @v15 = {
 ;     TL FB

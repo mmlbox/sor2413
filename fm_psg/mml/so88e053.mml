@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e053]
 #opll_mode 0
 #tempo 92
-#title { "The Heart Started Beating (The Fountain of Youth)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] The Heart Started Beating (The Fountain of Youth)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 123 v10 ; PSG Master Volume
 

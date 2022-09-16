@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e029]
 #opll_mode 0
 #tempo 106
-#title { "Forest (The Riddle of the Ruby)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Forest (The Riddle of the Ruby)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 @v15 = {
 ;       TL FB

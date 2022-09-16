@@ -81,7 +81,7 @@ mgsc.initialize().then(() => {
     fs.writeFileSync(`mgs/en/soe${out}`, new Buffer.from(res.mgs), 'binary');
 
     const jtitle = (entry.category !== "" ? `${entry.category} - ` : "") + entry.title;
-    const jmml = mml.replace(/^#title.*$/m, `#title { "${jtitle}" }`);
+    const jmml = mml.replace(/^#title.*$/m, `#title { "[SORCERIAN] ${jtitle}" }`);
     const jres = mgsc.compile(jmml);
     fs.writeFileSync(`mgs/ja/soj${out}`, new Buffer.from(jres.mgs), 'binary');
 

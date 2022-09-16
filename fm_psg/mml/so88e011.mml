@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e011]
 #opll_mode 0
 #tempo 98
-#title { "Underground Dungeon (The Floodgate of Lucifer)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Underground Dungeon (The Floodgate of Lucifer)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 @v15 = {
 ;       TL FB

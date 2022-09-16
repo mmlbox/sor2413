@@ -1,7 +1,7 @@
 ;[gain=1.0;name=so88e024]
 #opll_mode 0
 #tempo 98
-#title { "Red Dragon (Mage in the Dark Marsh)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
+#title { "[SORCERIAN] Red Dragon (Mage in the Dark Marsh)" } ;  Music from Sorcerian / Copyright (c) Nihon Falcom Corporation
 
 @v15 = {
 ;       TL FB
